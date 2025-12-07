@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\jgzik\\SoftSmart\\SoftSmart\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{15C0142A-33B0-49CE-B9D7-4DEF6D9A68AA}|Softcase.ML\\Softcase.ML.csproj|c:\\users\\jgzik\\softsmart\\softsmart\\softcase.ml\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{15C0142A-33B0-49CE-B9D7-4DEF6D9A68AA}|Softcase.ML\\Softcase.ML.csproj|solutionrelative:softcase.ml\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{969DF1AF-8914-46EA-BFDF-EAB575E930C0}|Softcase.Desktop\\Softcase.Desktop.csproj|c:\\users\\jgzik\\softsmart\\softsmart\\softcase.desktop\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{969DF1AF-8914-46EA-BFDF-EAB575E930C0}|Softcase.Desktop\\Softcase.Desktop.csproj|solutionrelative:softcase.desktop\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{15C0142A-33B0-49CE-B9D7-4DEF6D9A68AA}|Softcase.ML\\Softcase.ML.csproj|c:\\users\\jgzik\\softsmart\\softsmart\\softcase.ml\\geradordedados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{15C0142A-33B0-49CE-B9D7-4DEF6D9A68AA}|Softcase.ML\\Softcase.ML.csproj|solutionrelative:softcase.ml\\geradordedados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{969DF1AF-8914-46EA-BFDF-EAB575E930C0}|Softcase.Desktop\\Softcase.Desktop.csproj|c:\\users\\jgzik\\softsmart\\softsmart\\softcase.desktop\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{969DF1AF-8914-46EA-BFDF-EAB575E930C0}|Softcase.Desktop\\Softcase.Desktop.csproj|solutionrelative:softcase.desktop\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2FBB5283-9CDB-4602-9849-E9A272160F41}|Softcase.Core\\Softcase.Core.csproj|c:\\users\\jgzik\\softsmart\\softsmart\\softcase.core\\dadospatio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2FBB5283-9CDB-4602-9849-E9A272160F41}|Softcase.Core\\Softcase.Core.csproj|solutionrelative:softcase.core\\dadospatio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{15C0142A-33B0-49CE-B9D7-4DEF6D9A68AA}|Softcase.ML\\Softcase.ML.csproj|c:\\users\\jgzik\\softsmart\\softsmart\\softcase.ml\\modeloocupacao.mbconfig||{93FA4DC3-61EC-47AF-B0BA-50CAD3CAF049}",
+      "RelativeMoniker": "D:0:0:{15C0142A-33B0-49CE-B9D7-4DEF6D9A68AA}|Softcase.ML\\Softcase.ML.csproj|solutionrelative:softcase.ml\\modeloocupacao.mbconfig||{93FA4DC3-61EC-47AF-B0BA-50CAD3CAF049}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,46 +22,44 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ModeloOcupacao.mbconfig",
+              "DocumentMoniker": "C:\\Users\\jgzik\\SoftSmart\\SoftSmart\\Softcase.ML\\ModeloOcupacao.mbconfig",
+              "RelativeDocumentMoniker": "Softcase.ML\\ModeloOcupacao.mbconfig",
+              "ToolTip": "C:\\Users\\jgzik\\SoftSmart\\SoftSmart\\Softcase.ML\\ModeloOcupacao.mbconfig",
+              "RelativeToolTip": "Softcase.ML\\ModeloOcupacao.mbconfig",
+              "Icon": "7f5c38b0-f0bc-4551-a9a8-b4f467cc4670.000012|",
+              "WhenOpened": "2025-12-07T16:14:51.604Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "GeradorDeDados.cs",
-              "DocumentMoniker": "C:\\Users\\jgzik\\SoftSmart\\SoftSmart\\Softcase.ML\\GeradorDeDados.cs",
-              "RelativeDocumentMoniker": "Softcase.ML\\GeradorDeDados.cs",
-              "ToolTip": "C:\\Users\\jgzik\\SoftSmart\\SoftSmart\\Softcase.ML\\GeradorDeDados.cs",
-              "RelativeToolTip": "Softcase.ML\\GeradorDeDados.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAYwG8AAAAJAAAAAAAAAA==",
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\jgzik\\SoftSmart\\SoftSmart\\Softcase.Desktop\\Form1.cs",
+              "RelativeDocumentMoniker": "Softcase.Desktop\\Form1.cs",
+              "ToolTip": "C:\\Users\\jgzik\\SoftSmart\\SoftSmart\\Softcase.Desktop\\Form1.cs",
+              "RelativeToolTip": "Softcase.Desktop\\Form1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-07T04:45:12.243Z",
+              "WhenOpened": "2025-12-07T16:10:54.954Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\jgzik\\SoftSmart\\SoftSmart\\Softcase.ML\\Program.cs",
-              "RelativeDocumentMoniker": "Softcase.ML\\Program.cs",
-              "ToolTip": "C:\\Users\\jgzik\\SoftSmart\\SoftSmart\\Softcase.ML\\Program.cs",
-              "RelativeToolTip": "Softcase.ML\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAUAAAAAAAAAA==",
+              "Title": "Form1.cs [Projeto]",
+              "DocumentMoniker": "C:\\Users\\jgzik\\SoftSmart\\SoftSmart\\Softcase.Desktop\\Form1.cs",
+              "RelativeDocumentMoniker": "Softcase.Desktop\\Form1.cs",
+              "ToolTip": "C:\\Users\\jgzik\\SoftSmart\\SoftSmart\\Softcase.Desktop\\Form1.cs [Projeto]",
+              "RelativeToolTip": "Softcase.Desktop\\Form1.cs [Projeto]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-06T15:30:23.572Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "DadosPatio.cs",
-              "DocumentMoniker": "C:\\Users\\jgzik\\SoftSmart\\SoftSmart\\Softcase.Core\\DadosPatio.cs",
-              "RelativeDocumentMoniker": "Softcase.Core\\DadosPatio.cs",
-              "ToolTip": "C:\\Users\\jgzik\\SoftSmart\\SoftSmart\\Softcase.Core\\DadosPatio.cs",
-              "RelativeToolTip": "Softcase.Core\\DadosPatio.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAqwBcAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-06T15:26:00.842Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-07T16:01:38.929Z",
+              "EditorCaption": " [Projeto]"
             }
           ]
         }

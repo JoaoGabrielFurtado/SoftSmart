@@ -11,4 +11,10 @@
     <ProjectReference Include="..\Softcase.ML\Softcase.ML.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="ModeloOcupacao.mlnet">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

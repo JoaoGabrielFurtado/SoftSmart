@@ -7,6 +7,8 @@ using Softcase.Core;
 
 namespace Softcase.ML;
 
+// caminho: C:\Users\jgzik\SoftSmart\SoftSmart\Softcase.ML\bin\Debug\net9.0\DadosPatio.csv
+
 internal class GeradorDeDados
 {
     public static void GerarArquivoCSV(string caminhoArquivo)
