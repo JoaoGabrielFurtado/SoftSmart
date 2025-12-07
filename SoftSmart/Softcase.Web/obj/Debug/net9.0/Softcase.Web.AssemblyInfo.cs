@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Softcase.Web")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+06ff82a88a7efcd4519f0620704fce6cfbce216d")]
 [assembly: System.Reflection.AssemblyProductAttribute("Softcase.Web")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Softcase.Web")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

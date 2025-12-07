@@ -1,10 +1,19 @@
-﻿
-// Variaveis
+﻿using System.Diagnostics.Tracing;
 using Softcase.Core;
+using Softcase.ML;
 
-DateTime dataInicial = DateTime.Now.AddYears(-1);
-DateTime dataFinal = DateTime.Now;
-int vagasTotais = 250;
+string caminho = Path.Combine(Environment.CurrentDirectory, "DadosPatio.csv");
 
-List<DadosPatio> Lista_Patio = new();
+try
+{
+    GeradorDeDados.GerarArquivoCSV(caminho);
+}
+catch (Exception ex)
+{
+    Console.WriteLine($"Erro: {ex.Message}");
+}
+
+Console.ReadKey();
+
+
 

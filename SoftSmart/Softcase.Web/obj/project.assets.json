@@ -52,11 +52,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jgzik\\Desktop\\PGR\\PGRbcknd\\SoftSmart\\Softcase.Web\\Softcase.Web.csproj",
+      "projectUniqueName": "C:\\Users\\jgzik\\SoftSmart\\SoftSmart\\Softcase.Web\\Softcase.Web.csproj",
       "projectName": "Softcase.Web",
-      "projectPath": "C:\\Users\\jgzik\\Desktop\\PGR\\PGRbcknd\\SoftSmart\\Softcase.Web\\Softcase.Web.csproj",
+      "projectPath": "C:\\Users\\jgzik\\SoftSmart\\SoftSmart\\Softcase.Web\\Softcase.Web.csproj",
       "packagesPath": "C:\\Users\\jgzik\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jgzik\\Desktop\\PGR\\PGRbcknd\\SoftSmart\\Softcase.Web\\obj\\",
+      "outputPath": "C:\\Users\\jgzik\\SoftSmart\\SoftSmart\\Softcase.Web\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -71,17 +71,18 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "C:\\Users\\jgzik\\Desktop\\PGR\\PGRbcknd\\SoftSmart\\Softcase.Core\\Softcase.Core.csproj": {
-              "projectPath": "C:\\Users\\jgzik\\Desktop\\PGR\\PGRbcknd\\SoftSmart\\Softcase.Core\\Softcase.Core.csproj"
+            "C:\\Users\\jgzik\\SoftSmart\\SoftSmart\\Softcase.Core\\Softcase.Core.csproj": {
+              "projectPath": "C:\\Users\\jgzik\\SoftSmart\\SoftSmart\\Softcase.Core\\Softcase.Core.csproj"
             },
-            "C:\\Users\\jgzik\\Desktop\\PGR\\PGRbcknd\\SoftSmart\\Softcase.ML\\Softcase.ML.csproj": {
-              "projectPath": "C:\\Users\\jgzik\\Desktop\\PGR\\PGRbcknd\\SoftSmart\\Softcase.ML\\Softcase.ML.csproj"
+            "C:\\Users\\jgzik\\SoftSmart\\SoftSmart\\Softcase.ML\\Softcase.ML.csproj": {
+              "projectPath": "C:\\Users\\jgzik\\SoftSmart\\SoftSmart\\Softcase.ML\\Softcase.ML.csproj"
             }
           }
         }
