@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bdkl98SBsGo=",
+  "dgSpecHash": "qI31rfmHiZc=",
   "success": true,
-  "projectFilePath": "C:\\Users\\jgzik\\SoftSmart\\SoftSmart\\Softcase.Web\\Softcase.Web.csproj",
+  "projectFilePath": "C:\\Users\\jgzik\\Desktop\\SoftSmart\\SoftSmart_Project\\SoftSmart\\Softcase.Web\\Softcase.Web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jgzik\\.nuget\\packages\\dynamicobj\\2.0.0\\dynamicobj.2.0.0.nupkg.sha512",
     "C:\\Users\\jgzik\\.nuget\\packages\\fsharp.core\\6.0.5\\fsharp.core.6.0.5.nupkg.sha512",
