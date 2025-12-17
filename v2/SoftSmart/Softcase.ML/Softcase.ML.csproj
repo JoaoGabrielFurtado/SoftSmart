@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <OutputType>Exe</OutputType>
+    <OutputType>Library</OutputType>
     <TargetFramework>net9.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
@@ -9,9 +9,6 @@
     <PackageReference Include="Microsoft.ML" Version="3.0.1" />
     <PackageReference Include="Microsoft.ML.FastTree" Version="3.0.1" />
     <PackageReference Include="Plotly.NET" Version="3.0.1" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Softcase.Core\Softcase.Core.csproj" />
   </ItemGroup>
   <ItemGroup Label="ModeloOcupacao">
     <None Include="ModeloOcupacao.mlnet">

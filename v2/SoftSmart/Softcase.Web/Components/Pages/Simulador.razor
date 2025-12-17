@@ -78,27 +78,16 @@
 
     private void PreverOcupacao()
     {
-        // 1. Cria o objeto de entrada (Input) que a IA espera
-        // O nome da classe "ModeloOcupacao" depende do nome que você deu no Model Builder
-        var dadosEntrada = new ModeloOcupacao.ModelInput
-        {
-            Hora = hora,
-            DiaDaSemana = diaSemana,
-            Temperatura = temperatura,
-            Chuva = temChuva ? 1 : 0,
-            EventoNaRegiao = temEvento ? 1 : 0,
-            EhFeriado = 0 // Fixo por enquanto
-        };
+        var chuva = temChuva ? 1 : 0;
+        var evento = temEvento ? 1 : 0;
 
-        // 2. Chama a IA para prever
-        var resultado = ModeloOcupacao.Predict(dadosEntrada);
+        int previsao = ServicoDeIA.RetornaResultadoIA(hora, diaSemana, temperatura, chuva, evento, 0);
 
-        // 3. Pega o "Score" (o valor previsto)
-        resultadoPrevisao = resultado.Score;
+        resultadoPrevisao = previsao;
 
-        // Lógica visual simples para mudar a cor da barra
-        if (resultadoPrevisao > 200) corBarra = "bg-danger"; // Lotado
-        else if (resultadoPrevisao > 100) corBarra = "bg-warning"; // Médio
-        else corBarra = "bg-success"; // Tranquilo
+        // Logica barra
+        if (resultadoPrevisao > 200) corBarra = "bg-danger"; 
+        else if (resultadoPrevisao > 100) corBarra = "bg-warning"; 
+        else corBarra = "bg-success"; 
     }
 }

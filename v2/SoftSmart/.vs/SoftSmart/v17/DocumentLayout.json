@@ -1,12 +1,70 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\jgzik\\Desktop\\SoftSmart\\SoftSmart_Project\\v2\\SoftSmart\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{969DF1AF-8914-46EA-BFDF-EAB575E930C0}|Softcase.Desktop\\Softcase.Desktop.csproj|C:\\Users\\jgzik\\Desktop\\SoftSmart\\SoftSmart_Project\\v2\\SoftSmart\\softcase.desktop\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{969DF1AF-8914-46EA-BFDF-EAB575E930C0}|Softcase.Desktop\\Softcase.Desktop.csproj|solutionrelative:softcase.desktop\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{969DF1AF-8914-46EA-BFDF-EAB575E930C0}|Softcase.Desktop\\Softcase.Desktop.csproj|c:\\users\\jgzik\\desktop\\softsmart\\softsmart_project\\v2\\softsmart\\softcase.desktop\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{969DF1AF-8914-46EA-BFDF-EAB575E930C0}|Softcase.Desktop\\Softcase.Desktop.csproj|solutionrelative:softcase.desktop\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2FBB5283-9CDB-4602-9849-E9A272160F41}|Softcase.Core\\Softcase.Core.csproj|c:\\users\\jgzik\\desktop\\softsmart\\softsmart_project\\v2\\softsmart\\softcase.core\\classesapis\\clima.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2FBB5283-9CDB-4602-9849-E9A272160F41}|Softcase.Core\\Softcase.Core.csproj|solutionrelative:softcase.core\\classesapis\\clima.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Clima.cs",
+              "DocumentMoniker": "C:\\Users\\jgzik\\Desktop\\SoftSmart\\SoftSmart_Project\\v2\\SoftSmart\\Softcase.Core\\ClassesAPIs\\Clima.cs",
+              "RelativeDocumentMoniker": "Softcase.Core\\ClassesAPIs\\Clima.cs",
+              "ToolTip": "C:\\Users\\jgzik\\Desktop\\SoftSmart\\SoftSmart_Project\\v2\\SoftSmart\\Softcase.Core\\ClassesAPIs\\Clima.cs",
+              "RelativeToolTip": "Softcase.Core\\ClassesAPIs\\Clima.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAcwAkAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T01:02:11.215Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\jgzik\\Desktop\\SoftSmart\\SoftSmart_Project\\v2\\SoftSmart\\Softcase.Desktop\\Form1.cs",
+              "RelativeDocumentMoniker": "Softcase.Desktop\\Form1.cs",
+              "ToolTip": "C:\\Users\\jgzik\\Desktop\\SoftSmart\\SoftSmart_Project\\v2\\SoftSmart\\Softcase.Desktop\\Form1.cs",
+              "RelativeToolTip": "Softcase.Desktop\\Form1.cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAgwGQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T20:27:46.951Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs [Projeto]",
+              "DocumentMoniker": "C:\\Users\\jgzik\\Desktop\\SoftSmart\\SoftSmart_Project\\v2\\SoftSmart\\Softcase.Desktop\\Form1.cs",
+              "RelativeDocumentMoniker": "Softcase.Desktop\\Form1.cs",
+              "ToolTip": "C:\\Users\\jgzik\\Desktop\\SoftSmart\\SoftSmart_Project\\v2\\SoftSmart\\Softcase.Desktop\\Form1.cs [Projeto]",
+              "RelativeToolTip": "Softcase.Desktop\\Form1.cs [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T20:27:31.682Z",
+              "EditorCaption": " [Projeto]"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

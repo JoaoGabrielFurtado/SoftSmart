@@ -31,7 +31,11 @@
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\jgzik\\Desktop\\SoftSmart\\SoftSmart_Project\\v2\\SoftSmart\\Softcase.ML\\Softcase.ML.csproj": {
+                "projectPath": "C:\\Users\\jgzik\\Desktop\\SoftSmart\\SoftSmart_Project\\v2\\SoftSmart\\Softcase.ML\\Softcase.ML.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -49,6 +53,16 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.ML": {
+              "target": "Package",
+              "version": "[3.0.1, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.4, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -97,8 +111,8 @@
           "net9.0-windows7.0": {
             "targetAlias": "net9.0-windows",
             "projectReferences": {
-              "C:\\Users\\jgzik\\Desktop\\SoftSmart\\SoftSmart_Project\\v2\\SoftSmart\\Softcase.ML\\Softcase.ML.csproj": {
-                "projectPath": "C:\\Users\\jgzik\\Desktop\\SoftSmart\\SoftSmart_Project\\v2\\SoftSmart\\Softcase.ML\\Softcase.ML.csproj"
+              "C:\\Users\\jgzik\\Desktop\\SoftSmart\\SoftSmart_Project\\v2\\SoftSmart\\Softcase.Core\\Softcase.Core.csproj": {
+                "projectPath": "C:\\Users\\jgzik\\Desktop\\SoftSmart\\SoftSmart_Project\\v2\\SoftSmart\\Softcase.Core\\Softcase.Core.csproj"
               }
             }
           }
@@ -174,11 +188,7 @@
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
-            "projectReferences": {
-              "C:\\Users\\jgzik\\Desktop\\SoftSmart\\SoftSmart_Project\\v2\\SoftSmart\\Softcase.Core\\Softcase.Core.csproj": {
-                "projectPath": "C:\\Users\\jgzik\\Desktop\\SoftSmart\\SoftSmart_Project\\v2\\SoftSmart\\Softcase.Core\\Softcase.Core.csproj"
-              }
-            }
+            "projectReferences": {}
           }
         },
         "warningProperties": {

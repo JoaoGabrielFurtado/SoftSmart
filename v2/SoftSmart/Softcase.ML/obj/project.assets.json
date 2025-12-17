@@ -508,16 +508,6 @@
             "related": ".xml"
           }
         }
-      },
-      "Softcase.Core/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v9.0",
-        "compile": {
-          "bin/placeholder/Softcase.Core.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Softcase.Core.dll": {}
-        }
       }
     }
   },
@@ -1415,19 +1405,13 @@
         "system.threading.tasks.4.3.0.nupkg.sha512",
         "system.threading.tasks.nuspec"
       ]
-    },
-    "Softcase.Core/1.0.0": {
-      "type": "project",
-      "path": "../Softcase.Core/Softcase.Core.csproj",
-      "msbuildProject": "../Softcase.Core/Softcase.Core.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net9.0": [
       "Microsoft.ML >= 3.0.1",
       "Microsoft.ML.FastTree >= 3.0.1",
-      "Plotly.NET >= 3.0.1",
-      "Softcase.Core >= 1.0.0"
+      "Plotly.NET >= 3.0.1"
     ]
   },
   "packageFolders": {
@@ -1461,11 +1445,7 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {
-            "C:\\Users\\jgzik\\Desktop\\SoftSmart\\SoftSmart_Project\\v2\\SoftSmart\\Softcase.Core\\Softcase.Core.csproj": {
-              "projectPath": "C:\\Users\\jgzik\\Desktop\\SoftSmart\\SoftSmart_Project\\v2\\SoftSmart\\Softcase.Core\\Softcase.Core.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
