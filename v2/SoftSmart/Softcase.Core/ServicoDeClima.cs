@@ -11,7 +11,7 @@ namespace Softcase.Core;
 
 public class ServicoDeClima 
 {
-    private const string key = "6c808a1d47d9ea2c1927bf79cbce3dd1";
+    private const string key = "";
     private static readonly HttpClient _httpClient = new HttpClient();
 
     public async Task<RespostaClima> VerificaClimaAsync(string cidade)
