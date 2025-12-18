@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Softcase.Desktop")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+437f7bbfda2b91ed52042e3f5beb81bfde967ddd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f63fb0b6e2f676c088c4fc40eb267b80b98f1340")]
 [assembly: System.Reflection.AssemblyProductAttribute("Softcase.Desktop")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Softcase.Desktop")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -35,7 +35,9 @@
             Lbl_Cidade = new Label();
             Cbx_Cidade = new ComboBox();
             Btn_VerificaIA = new Button();
+            Dgv_Infos = new DataGridView();
             Grp_Infos.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)Dgv_Infos).BeginInit();
             SuspendLayout();
             // 
             // Grp_Infos
@@ -102,11 +104,20 @@
             Btn_VerificaIA.UseVisualStyleBackColor = false;
             Btn_VerificaIA.Click += Btn_VerificaIA_Click;
             // 
+            // Dgv_Infos
+            // 
+            Dgv_Infos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            Dgv_Infos.Location = new Point(382, 34);
+            Dgv_Infos.Name = "Dgv_Infos";
+            Dgv_Infos.Size = new Size(440, 129);
+            Dgv_Infos.TabIndex = 11;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(385, 197);
+            ClientSize = new Size(847, 197);
+            Controls.Add(Dgv_Infos);
             Controls.Add(Btn_VerificaIA);
             Controls.Add(Grp_Infos);
             Icon = (Icon)resources.GetObject("$this.Icon");
@@ -116,6 +127,7 @@
             Text = "SoftSmart";
             Grp_Infos.ResumeLayout(false);
             Grp_Infos.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)Dgv_Infos).EndInit();
             ResumeLayout(false);
         }
 
@@ -126,5 +138,6 @@
         private ComboBox Cbx_Cidade;
         private Label Lbl_Prever;
         private ComboBox Cbx_Prever;
+        private DataGridView Dgv_Infos;
     }
 }

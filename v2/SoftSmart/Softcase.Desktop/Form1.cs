@@ -1,5 +1,7 @@
 using Newtonsoft.Json;
 using Softcase.Core;
+using Softcase.Core.DTOs;
+using System.Linq.Expressions;
 using System.Runtime.Intrinsics.X86;
 
 namespace Softcase.Desktop
@@ -43,58 +45,80 @@ namespace Softcase.Desktop
 
         private async void Btn_VerificaIA_Click(object sender, EventArgs e)
         {
-            float cidade = Cbx_Cidade.SelectedIndex;
-            string cidadeString = Cbx_Cidade.Text;
-            int prever;
-            try
-            {
-                prever = Convert.ToInt32(Cbx_Prever.Text);
-            }
-            catch (Exception er)
-            {
-                MessageBox.Show("Preencha o campo 'Prever quantos dias'", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
+            string cidade = Cbx_Cidade.Text;
+            int prever = Convert.ToInt32(Cbx_Prever.Text);
 
-            if (cidade == -1)
-            {
-                MessageBox.Show("Selecione uma cidade!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
+            List<PrevisaoFutura> _listaPrevisao = await RetornaPrevisaoFuturaAsync(cidade, prever);
 
-            List<string> diasPrever = new();
+            List<ResultadoConsolidado> _listaResultados = new();
 
-            for(int i = 1; i < prever + 1; i++)
+            foreach (var item in _listaPrevisao)
             {
-                DateTime dateSoma = data.AddDays(i);
-                diasPrever.Add(dateSoma.ToString());    
-            }
 
-            foreach (string i in diasPrever)
-            {
-                MessageBox.Show(i);
+                var diaSemana = item.Data.DayOfWeek;
+                TimeSpan hora = item.Data.TimeOfDay;
+                int ocupacao = ServicoDeIA.RetornaResultadoIA((float)hora.TotalHours, (float)diaSemana, item.Temperatura, 0, 0, 0);
+                string motivo = "AINDA NADA";
+
+                ResultadoConsolidado result = new ResultadoConsolidado
+                {
+                    Data = item.Data,
+                    Temperatura = item.Temperatura,
+                    OcupacaoPrevista = ocupacao,
+                    MotivoPrincipal = motivo
+                };
+
+
+                _listaResultados.Add(result);
+
             }
 
-            MessageBox.Show("DATA RESETADA " + data);
+            Dgv_Infos.DataSource = " ";
+            Dgv_Infos.DataSource = _listaResultados;
 
-            float temperatura = await RetornaClimaAsync(cidadeString);
-
-            MessageBox.Show(temperatura.ToString());
-
-            int previsao = ServicoDeIA.RetornaResultadoIA(
-                22, 2, temperatura, 0, 0, 0
-            );
         }
+
 
         //METODOS
 
-        public async Task<float> RetornaClimaAsync(string cidade)
+        public async Task<List<PrevisaoFutura>> RetornaPrevisaoFuturaAsync(string cidade, int prever)
         {
+            List<PrevisaoFutura> listaPrevisaoFutura = new();
             RespostaClima retorno = await servicoDeClima.VerificaClimaAsync(cidade);
-            if (retorno == null || retorno.list == null || retorno.list.Count == 0)
-                return 0f;
-            int temperatura = Convert.ToInt32(retorno.list[0].main.temp);
-            return temperatura;
+
+            if (retorno == null || retorno.list == null) return listaPrevisaoFutura;
+
+            for (int i = 1; i <= prever; i++)
+            {
+                DateTime dataAlvo = DateTime.Now.Date.AddDays(i);
+
+                // Data 
+                // horário 12:00
+                var itemEncontrado = retorno.list.FirstOrDefault(x =>
+                    Convert.ToDateTime(x.dt_txt).Date == dataAlvo &&
+                    Convert.ToDateTime(x.dt_txt).Hour == 12
+                );
+
+                // tenta pegar qualquer horário daquele dia para não ficar vazio
+                if (itemEncontrado == null)
+                {
+                    itemEncontrado = retorno.list.FirstOrDefault(x =>
+                       Convert.ToDateTime(x.dt_txt).Date == dataAlvo
+                    );
+                }
+
+                if (itemEncontrado != null)
+                {
+                    PrevisaoFutura p = new PrevisaoFutura
+                    {
+                        Data = Convert.ToDateTime(itemEncontrado.dt_txt),
+                        Temperatura = (float)Math.Round(itemEncontrado.main.temp)
+                    };
+
+                    listaPrevisaoFutura.Add(p); 
+                }
+            }
+            return listaPrevisaoFutura;
         }
     }
 }
