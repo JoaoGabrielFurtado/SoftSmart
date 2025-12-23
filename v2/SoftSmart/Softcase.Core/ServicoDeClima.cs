@@ -1,17 +1,10 @@
 ﻿using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel.Design.Serialization;
-using System.Linq;
-using System.Text;
-using System.Text.Json;
-using System.Threading.Tasks;
 
 namespace Softcase.Core;
 
-public class ServicoDeClima 
+public class ServicoDeClima
 {
-    private const string key = "";
+    private const string key = "6c808a1d47d9ea2c1927bf79cbce3dd1";
     private static readonly HttpClient _httpClient = new HttpClient();
 
     public async Task<RespostaClima> VerificaClimaAsync(string cidade)

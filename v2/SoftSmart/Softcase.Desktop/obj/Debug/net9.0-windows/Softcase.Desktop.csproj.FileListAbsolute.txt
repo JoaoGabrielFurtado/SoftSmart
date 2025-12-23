@@ -62,3 +62,5 @@ C:\Users\jgzik\Desktop\SoftSmart\SoftSmart_Project\v2\SoftSmart\Softcase.Desktop
 C:\Users\jgzik\Desktop\SoftSmart\SoftSmart_Project\v2\SoftSmart\Softcase.Desktop\obj\Debug\net9.0-windows\Softcase.Desktop.pdb
 C:\Users\jgzik\Desktop\SoftSmart\SoftSmart_Project\v2\SoftSmart\Softcase.Desktop\obj\Debug\net9.0-windows\Softcase.Desktop.genruntimeconfig.cache
 C:\Users\jgzik\Desktop\SoftSmart\SoftSmart_Project\v2\SoftSmart\Softcase.Desktop\obj\Debug\net9.0-windows\ref\Softcase.Desktop.dll
+C:\Users\jgzik\Desktop\SoftSmart\SoftSmart_Project\v2\SoftSmart\Softcase.Desktop\bin\Debug\net9.0-windows\Nager.Date.dll
+C:\Users\jgzik\Desktop\SoftSmart\SoftSmart_Project\v2\SoftSmart\Softcase.Desktop\bin\Debug\net9.0-windows\Nager.LicenseSystem.dll

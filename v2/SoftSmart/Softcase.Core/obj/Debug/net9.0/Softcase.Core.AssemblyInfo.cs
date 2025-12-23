@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Softcase.Core")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f63fb0b6e2f676c088c4fc40eb267b80b98f1340")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+55b382998e7a3ba16deb2580ce95b0668686e93a")]
 [assembly: System.Reflection.AssemblyProductAttribute("Softcase.Core")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Softcase.Core")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

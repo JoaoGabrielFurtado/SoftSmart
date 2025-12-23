@@ -92,14 +92,11 @@ namespace Softcase.Desktop
             {
                 DateTime dataAlvo = DateTime.Now.Date.AddDays(i);
 
-                // Data 
-                // horário 12:00
                 var itemEncontrado = retorno.list.FirstOrDefault(x =>
                     Convert.ToDateTime(x.dt_txt).Date == dataAlvo &&
                     Convert.ToDateTime(x.dt_txt).Hour == 12
                 );
 
-                // tenta pegar qualquer horário daquele dia para não ficar vazio
                 if (itemEncontrado == null)
                 {
                     itemEncontrado = retorno.list.FirstOrDefault(x =>
@@ -109,13 +106,23 @@ namespace Softcase.Desktop
 
                 if (itemEncontrado != null)
                 {
+                    float indicadorChuva = 0;
+                    if (itemEncontrado.weather != null && itemEncontrado.weather.Length > 0)
+                    {
+                        string condicao = itemEncontrado.weather[0].main; 
+                        if (condicao == "Rain" || condicao == "Thunderstorm" || condicao == "Drizzle")
+                            indicadorChuva = 1;
+                    }
+
+                    bool feriado = ServicoDeCalendario.EhFeriado(Convert.ToDateTime(itemEncontrado.dt_txt));
+
                     PrevisaoFutura p = new PrevisaoFutura
                     {
                         Data = Convert.ToDateTime(itemEncontrado.dt_txt),
-                        Temperatura = (float)Math.Round(itemEncontrado.main.temp)
+                        Temperatura = (float)Math.Round(itemEncontrado.main.temp),
+                        Chuva = indicadorChuva 
                     };
-
-                    listaPrevisaoFutura.Add(p); 
+                    listaPrevisaoFutura.Add(p);
                 }
             }
             return listaPrevisaoFutura;

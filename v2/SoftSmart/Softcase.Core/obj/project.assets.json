@@ -302,6 +302,35 @@
           "lib/netstandard1.0/_._": {}
         }
       },
+      "Nager.Date/2.10.0": {
+        "type": "package",
+        "dependencies": {
+          "Nager.LicenseSystem": "1.2.0"
+        },
+        "compile": {
+          "lib/net8.0/Nager.Date.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Nager.Date.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Nager.LicenseSystem/1.2.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Nager.LicenseSystem.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Nager.LicenseSystem.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Newtonsoft.Json/13.0.4": {
         "type": "package",
         "compile": {
@@ -719,6 +748,50 @@
         "microsoft.netcore.targets.1.1.0.nupkg.sha512",
         "microsoft.netcore.targets.nuspec",
         "runtime.json"
+      ]
+    },
+    "Nager.Date/2.10.0": {
+      "sha512": "n04Lo4yVdWQlVmL2xPR+Bez27qfIqCSGxxUd3dszIsGjbXB2fIwz2haQVhSw7WA3b8WOdpa74MoX2GO204kSIw==",
+      "type": "package",
+      "path": "nager.date/2.10.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE/LICENSE",
+        "README.md",
+        "calendar.png",
+        "lib/net472/Nager.Date.dll",
+        "lib/net472/Nager.Date.xml",
+        "lib/net6.0/Nager.Date.dll",
+        "lib/net6.0/Nager.Date.xml",
+        "lib/net8.0/Nager.Date.dll",
+        "lib/net8.0/Nager.Date.xml",
+        "lib/netstandard2.0/Nager.Date.dll",
+        "lib/netstandard2.0/Nager.Date.xml",
+        "nager.date.2.10.0.nupkg.sha512",
+        "nager.date.nuspec",
+        "readme.txt"
+      ]
+    },
+    "Nager.LicenseSystem/1.2.0": {
+      "sha512": "deSDNWOhrcgVlNC6bWNNMVTosWdWu9WPfRFnAkGR3Bp905KkNV5czOlR8doEN1UvC+izfv6qamq/KZeXchSmCA==",
+      "type": "package",
+      "path": "nager.licensesystem/1.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE/LICENSE",
+        "lib/net472/Nager.LicenseSystem.dll",
+        "lib/net472/Nager.LicenseSystem.xml",
+        "lib/net6.0/Nager.LicenseSystem.dll",
+        "lib/net6.0/Nager.LicenseSystem.xml",
+        "lib/net8.0/Nager.LicenseSystem.dll",
+        "lib/net8.0/Nager.LicenseSystem.xml",
+        "lib/netstandard2.0/Nager.LicenseSystem.dll",
+        "lib/netstandard2.0/Nager.LicenseSystem.xml",
+        "nager.licensesystem.1.2.0.nupkg.sha512",
+        "nager.licensesystem.nuspec",
+        "packageicon.png"
       ]
     },
     "Newtonsoft.Json/13.0.4": {
@@ -1433,6 +1506,7 @@
   "projectFileDependencyGroups": {
     "net9.0": [
       "Microsoft.ML >= 3.0.1",
+      "Nager.Date >= 2.10.0",
       "Newtonsoft.Json >= 13.0.4",
       "Softcase.ML >= 1.0.0"
     ]
@@ -1494,6 +1568,10 @@
           "Microsoft.ML": {
             "target": "Package",
             "version": "[3.0.1, )"
+          },
+          "Nager.Date": {
+            "target": "Package",
+            "version": "[2.10.0, )"
           },
           "Newtonsoft.Json": {
             "target": "Package",

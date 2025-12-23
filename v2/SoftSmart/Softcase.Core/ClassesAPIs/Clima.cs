@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic; 
-
-namespace Softcase.Core
+﻿namespace Softcase.Core
 {
     public class RespostaClima
     {
@@ -13,7 +11,7 @@ namespace Softcase.Core
 
     public class PrevisaoItem
     {
-        public long dt { get; set; } 
+        public long dt { get; set; }
         public Main main { get; set; }
         public Weather[] weather { get; set; }
         public Clouds clouds { get; set; }

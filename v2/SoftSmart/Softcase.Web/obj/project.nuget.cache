@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "uV1JkJpVMUY=",
+  "dgSpecHash": "iP5MeoySYek=",
   "success": true,
   "projectFilePath": "C:\\Users\\jgzik\\Desktop\\SoftSmart\\SoftSmart_Project\\v2\\SoftSmart\\Softcase.Web\\Softcase.Web.csproj",
   "expectedPackageFiles": [
@@ -12,6 +12,8 @@
     "C:\\Users\\jgzik\\.nuget\\packages\\microsoft.ml.fasttree\\3.0.1\\microsoft.ml.fasttree.3.0.1.nupkg.sha512",
     "C:\\Users\\jgzik\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\jgzik\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
+    "C:\\Users\\jgzik\\.nuget\\packages\\nager.date\\2.10.0\\nager.date.2.10.0.nupkg.sha512",
+    "C:\\Users\\jgzik\\.nuget\\packages\\nager.licensesystem\\1.2.0\\nager.licensesystem.1.2.0.nupkg.sha512",
     "C:\\Users\\jgzik\\.nuget\\packages\\newtonsoft.json\\13.0.4\\newtonsoft.json.13.0.4.nupkg.sha512",
     "C:\\Users\\jgzik\\.nuget\\packages\\plotly.net\\3.0.1\\plotly.net.3.0.1.nupkg.sha512",
     "C:\\Users\\jgzik\\.nuget\\packages\\system.codedom\\4.5.0\\system.codedom.4.5.0.nupkg.sha512",
