@@ -1421,11 +1421,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jgzik\\Desktop\\SoftSmart\\SoftSmart_Project\\v2\\SoftSmart\\Softcase.ML\\Softcase.ML.csproj",
+      "projectUniqueName": "C:\\Users\\jgzik\\SoftSmart\\v2\\SoftSmart\\Softcase.ML\\Softcase.ML.csproj",
       "projectName": "Softcase.ML",
-      "projectPath": "C:\\Users\\jgzik\\Desktop\\SoftSmart\\SoftSmart_Project\\v2\\SoftSmart\\Softcase.ML\\Softcase.ML.csproj",
+      "projectPath": "C:\\Users\\jgzik\\SoftSmart\\v2\\SoftSmart\\Softcase.ML\\Softcase.ML.csproj",
       "packagesPath": "C:\\Users\\jgzik\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jgzik\\Desktop\\SoftSmart\\SoftSmart_Project\\v2\\SoftSmart\\Softcase.ML\\obj\\",
+      "outputPath": "C:\\Users\\jgzik\\SoftSmart\\v2\\SoftSmart\\Softcase.ML\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1440,6 +1440,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

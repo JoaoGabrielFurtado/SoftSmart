@@ -218,22 +218,22 @@
       },
       "Microsoft.NETCore.Platforms/1.1.0": {},
       "Microsoft.NETCore.Targets/1.1.0": {},
-      "Nager.Date/2.14.0": {
+      "Nager.Date/2.10.0": {
         "dependencies": {
-          "Nager.LicenseSystem": "1.2.1"
+          "Nager.LicenseSystem": "1.2.0"
         },
         "runtime": {
           "lib/net8.0/Nager.Date.dll": {
-            "assemblyVersion": "2.14.0.0",
-            "fileVersion": "2.14.0.0"
+            "assemblyVersion": "2.10.0.0",
+            "fileVersion": "2.10.0.0"
           }
         }
       },
-      "Nager.LicenseSystem/1.2.1": {
+      "Nager.LicenseSystem/1.2.0": {
         "runtime": {
           "lib/net8.0/Nager.LicenseSystem.dll": {
-            "assemblyVersion": "1.2.1.0",
-            "fileVersion": "1.2.1.0"
+            "assemblyVersion": "1.2.0.0",
+            "fileVersion": "1.2.0.0"
           }
         }
       },
@@ -333,7 +333,7 @@
       "Softcase.Core/1.0.0": {
         "dependencies": {
           "Microsoft.ML": "3.0.1",
-          "Nager.Date": "2.14.0",
+          "Nager.Date": "2.10.0",
           "Newtonsoft.Json": "13.0.4",
           "Softcase.ML": "1.0.0"
         },
@@ -421,19 +421,19 @@
       "path": "microsoft.netcore.targets/1.1.0",
       "hashPath": "microsoft.netcore.targets.1.1.0.nupkg.sha512"
     },
-    "Nager.Date/2.14.0": {
+    "Nager.Date/2.10.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-trI9Dkx13xT5eeQuoJE9wjoQmNyb8Sr7Z/alNgIjlVN7WMOaTwkDzW7LP3Pp/E6xeV3IlU6Q2f37788yYUja2Q==",
-      "path": "nager.date/2.14.0",
-      "hashPath": "nager.date.2.14.0.nupkg.sha512"
+      "sha512": "sha512-n04Lo4yVdWQlVmL2xPR+Bez27qfIqCSGxxUd3dszIsGjbXB2fIwz2haQVhSw7WA3b8WOdpa74MoX2GO204kSIw==",
+      "path": "nager.date/2.10.0",
+      "hashPath": "nager.date.2.10.0.nupkg.sha512"
     },
-    "Nager.LicenseSystem/1.2.1": {
+    "Nager.LicenseSystem/1.2.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Xh00Gp4VKADhNTsxjcRDvmOPy1B1bvu/BC22v1hyWopbCUlXA7gCwjvRyzujSTLuNrv5DFnSgR/pW+7D3YAKNQ==",
-      "path": "nager.licensesystem/1.2.1",
-      "hashPath": "nager.licensesystem.1.2.1.nupkg.sha512"
+      "sha512": "sha512-deSDNWOhrcgVlNC6bWNNMVTosWdWu9WPfRFnAkGR3Bp905KkNV5czOlR8doEN1UvC+izfv6qamq/KZeXchSmCA==",
+      "path": "nager.licensesystem/1.2.0",
+      "hashPath": "nager.licensesystem.1.2.0.nupkg.sha512"
     },
     "Newtonsoft.Json/13.0.4": {
       "type": "package",

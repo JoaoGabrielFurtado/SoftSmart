@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Softcase.ML")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+437f7bbfda2b91ed52042e3f5beb81bfde967ddd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d053874d585eed23f443e50446e153dc65efc841")]
 [assembly: System.Reflection.AssemblyProductAttribute("Softcase.ML")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Softcase.ML")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
