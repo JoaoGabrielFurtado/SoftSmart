@@ -117,7 +117,6 @@ C:\Users\jgzik\SoftSmart\v2\SoftSmart\Softcase.Desktop\bin\Debug\net9.0-windows\
 C:\Users\jgzik\SoftSmart\v2\SoftSmart\Softcase.Desktop\bin\Debug\net9.0-windows\Softcase.Core.pdb
 C:\Users\jgzik\SoftSmart\v2\SoftSmart\Softcase.Desktop\bin\Debug\net9.0-windows\Softcase.ML.pdb
 C:\Users\jgzik\SoftSmart\v2\SoftSmart\Softcase.Desktop\obj\Debug\net9.0-windows\Softcase.Desktop.csproj.AssemblyReference.cache
-C:\Users\jgzik\SoftSmart\v2\SoftSmart\Softcase.Desktop\obj\Debug\net9.0-windows\Softcase.Desktop.Form1.resources
 C:\Users\jgzik\SoftSmart\v2\SoftSmart\Softcase.Desktop\obj\Debug\net9.0-windows\Softcase.Desktop.csproj.GenerateResource.cache
 C:\Users\jgzik\SoftSmart\v2\SoftSmart\Softcase.Desktop\obj\Debug\net9.0-windows\Softcase.Desktop.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\jgzik\SoftSmart\v2\SoftSmart\Softcase.Desktop\obj\Debug\net9.0-windows\Softcase.Desktop.AssemblyInfoInputs.cache
@@ -130,3 +129,5 @@ C:\Users\jgzik\SoftSmart\v2\SoftSmart\Softcase.Desktop\obj\Debug\net9.0-windows\
 C:\Users\jgzik\SoftSmart\v2\SoftSmart\Softcase.Desktop\obj\Debug\net9.0-windows\Softcase.Desktop.pdb
 C:\Users\jgzik\SoftSmart\v2\SoftSmart\Softcase.Desktop\obj\Debug\net9.0-windows\Softcase.Desktop.genruntimeconfig.cache
 C:\Users\jgzik\SoftSmart\v2\SoftSmart\Softcase.Desktop\obj\Debug\net9.0-windows\ref\Softcase.Desktop.dll
+C:\Users\jgzik\SoftSmart\v2\SoftSmart\Softcase.Desktop\obj\Debug\net9.0-windows\Softcase.Desktop.FormPrincipal.resources
+C:\Users\jgzik\SoftSmart\v2\SoftSmart\Softcase.Desktop\obj\Debug\net9.0-windows\Softcase.Desktop.Eventos.resources

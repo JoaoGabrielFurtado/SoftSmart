@@ -1,7 +1,4 @@
 ﻿using Softcase_ML;
-
-
-
 namespace Softcase.Core;
 
 public static class ServicoDeIA

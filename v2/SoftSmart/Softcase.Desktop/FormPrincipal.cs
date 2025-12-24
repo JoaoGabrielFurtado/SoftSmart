@@ -6,16 +6,16 @@ using System.Runtime.Intrinsics.X86;
 
 namespace Softcase.Desktop
 {
-    public partial class Form1 : Form
+    public partial class FormPrincipal : Form
     {
 
         private float estaChovendo = 0;
         private float ehFeriado = 0;
-        private float temEvento = 0;
+        private bool temEvento = false;
         private DateTime data = DateTime.Now;
         public ServicoDeClima servicoDeClima = new();
 
-        public Form1()
+        public FormPrincipal()
         {
             InitializeComponent();
 
@@ -52,30 +52,50 @@ namespace Softcase.Desktop
 
             List<ResultadoConsolidado> _listaResultados = new();
 
+            List<DateTime> diasComEvento = new();
+
+            if (temEvento)
+                diasComEvento = ChamaFormEvento(prever);
+
             foreach (var item in _listaPrevisao)
             {
-
                 var diaSemana = item.Data.DayOfWeek;
                 TimeSpan hora = item.Data.TimeOfDay;
-                int ocupacao = ServicoDeIA.RetornaResultadoIA((float)hora.TotalHours, (float)diaSemana, item.Temperatura, 0, 0, 0);
+                float evento = diasComEvento.Contains(item.Data.Date) ? 1 : 0;
+                float temChuva = item.Chuva;
+                float ehFeriado = ServicoDeCalendario.EhFeriado(item.Data) ? 1 : 0;
+                int ocupacao = ServicoDeIA.RetornaResultadoIA((float)hora.TotalHours, (float)diaSemana, item.Temperatura, temChuva, evento, ehFeriado);
                 string motivo = "AINDA NADA";
 
-                ResultadoConsolidado result = new ResultadoConsolidado
+                ResultadoConsolidado resultado = new ResultadoConsolidado
                 {
                     Data = item.Data,
                     Temperatura = item.Temperatura,
                     OcupacaoPrevista = ocupacao,
+                    Evento = evento == 1 ? "Tem evento" : "Não tem evento",
                     MotivoPrincipal = motivo
                 };
 
 
-                _listaResultados.Add(result);
+                _listaResultados.Add(resultado);
 
             }
 
             Dgv_Infos.DataSource = " ";
             Dgv_Infos.DataSource = _listaResultados;
 
+        }
+        private void Lbl_Informacoes_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Caso possua um ou mais eventos nos dias que você deseja prever marque \"TEM EVENTO?\" e preencha as opções.", "Tem Eventos?", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void Cbx_Evento_CheckedChanged(object sender, EventArgs e)
+        {
+            if (Cbx_Evento.Checked)
+                temEvento = true;
+            else
+                temEvento = false;
         }
 
 
@@ -109,7 +129,7 @@ namespace Softcase.Desktop
                     float indicadorChuva = 0;
                     if (itemEncontrado.weather != null && itemEncontrado.weather.Length > 0)
                     {
-                        string condicao = itemEncontrado.weather[0].main; 
+                        string condicao = itemEncontrado.weather[0].main;
                         if (condicao == "Rain" || condicao == "Thunderstorm" || condicao == "Drizzle")
                             indicadorChuva = 1;
                     }
@@ -120,12 +140,22 @@ namespace Softcase.Desktop
                     {
                         Data = Convert.ToDateTime(itemEncontrado.dt_txt),
                         Temperatura = (float)Math.Round(itemEncontrado.main.temp),
-                        Chuva = indicadorChuva 
+                        Chuva = indicadorChuva
                     };
                     listaPrevisaoFutura.Add(p);
                 }
             }
             return listaPrevisaoFutura;
         }
+
+        private List<DateTime> ChamaFormEvento(int prever)
+        {
+            Eventos evento = new Eventos(prever);
+            evento.ShowDialog();
+            List<DateTime> diasSelecionados = evento.RetornaDiasSelecionados();
+            return diasSelecionados;
+        }
+
+
     }
 }
