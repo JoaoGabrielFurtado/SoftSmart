@@ -3,6 +3,7 @@ using Softcase.Core;
 using Softcase.Core.DTOs;
 using System.Linq.Expressions;
 using System.Runtime.Intrinsics.X86;
+using System.Threading.Tasks;
 
 namespace Softcase.Desktop
 {
@@ -63,7 +64,7 @@ namespace Softcase.Desktop
                 TimeSpan hora = item.Data.TimeOfDay;
                 float evento = diasComEvento.Contains(item.Data.Date) ? 1 : 0;
                 float temChuva = item.Chuva;
-                float ehFeriado = ServicoDeCalendario.EhFeriado(item.Data) ? 1 : 0;
+                float ehFeriado = ServicoDeCalendario.EhFeriado(item.Data.Date) ? 1 : 0;
                 int ocupacao = ServicoDeIA.RetornaResultadoIA((float)hora.TotalHours, (float)diaSemana, item.Temperatura, temChuva, evento, ehFeriado);
                 string motivo = "AINDA NADA";
 
@@ -76,6 +77,7 @@ namespace Softcase.Desktop
                     MotivoPrincipal = motivo
                 };
 
+                MessageBox.Show(resultado.Evento.ToString());
 
                 _listaResultados.Add(resultado);
 
@@ -151,9 +153,15 @@ namespace Softcase.Desktop
         private List<DateTime> ChamaFormEvento(int prever)
         {
             Eventos evento = new Eventos(prever);
-            evento.ShowDialog();
-            List<DateTime> diasSelecionados = evento.RetornaDiasSelecionados();
-            return diasSelecionados;
+            var resultado = evento.ShowDialog();
+
+            if (resultado == DialogResult.OK)
+            {
+                List<DateTime> diasSelecionados = evento.RetornaDiasSelecionados();
+                return diasSelecionados;
+            }
+
+            return new List<DateTime>();
         }
 
 

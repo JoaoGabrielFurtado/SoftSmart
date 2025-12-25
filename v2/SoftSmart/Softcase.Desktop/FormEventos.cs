@@ -34,14 +34,13 @@ namespace Softcase.Desktop
         public List<DateTime> RetornaDiasSelecionados()
         {
             List<DateTime> diasSelecionados = new List<DateTime>();
-            foreach (Control control in this.Controls)
+            foreach (Control control in Flp_PainelDias.Controls)
             {
                 if (control is CheckBox checkBox && checkBox.Checked)
                 {
-                    DateTime dataSelecionada;
-                    if (DateTime.TryParse(checkBox.Text, out dataSelecionada))
+                    if (DateTime.TryParse(checkBox.Text, out DateTime dataSelecionada))
                     {
-                        diasSelecionados.Add(dataSelecionada);
+                        diasSelecionados.Add(dataSelecionada.Date);
                     }
                 }
             }
@@ -55,6 +54,7 @@ namespace Softcase.Desktop
 
         private void Btn_ConcluirEventos_Click(object sender, EventArgs e)
         {
+            this.DialogResult = DialogResult.OK;
             this.Close();
         }
     }

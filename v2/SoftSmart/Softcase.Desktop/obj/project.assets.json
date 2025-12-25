@@ -1537,11 +1537,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jgzik\\SoftSmart\\v2\\SoftSmart\\Softcase.Desktop\\Softcase.Desktop.csproj",
+      "projectUniqueName": "C:\\Users\\jgzik\\Desktop\\SoftSmart\\SoftSmart\\v2\\SoftSmart\\Softcase.Desktop\\Softcase.Desktop.csproj",
       "projectName": "Softcase.Desktop",
-      "projectPath": "C:\\Users\\jgzik\\SoftSmart\\v2\\SoftSmart\\Softcase.Desktop\\Softcase.Desktop.csproj",
+      "projectPath": "C:\\Users\\jgzik\\Desktop\\SoftSmart\\SoftSmart\\v2\\SoftSmart\\Softcase.Desktop\\Softcase.Desktop.csproj",
       "packagesPath": "C:\\Users\\jgzik\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jgzik\\SoftSmart\\v2\\SoftSmart\\Softcase.Desktop\\obj\\",
+      "outputPath": "C:\\Users\\jgzik\\Desktop\\SoftSmart\\SoftSmart\\v2\\SoftSmart\\Softcase.Desktop\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1556,15 +1556,14 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net9.0-windows7.0": {
           "targetAlias": "net9.0-windows",
           "projectReferences": {
-            "C:\\Users\\jgzik\\SoftSmart\\v2\\SoftSmart\\Softcase.Core\\Softcase.Core.csproj": {
-              "projectPath": "C:\\Users\\jgzik\\SoftSmart\\v2\\SoftSmart\\Softcase.Core\\Softcase.Core.csproj"
+            "C:\\Users\\jgzik\\Desktop\\SoftSmart\\SoftSmart\\v2\\SoftSmart\\Softcase.Core\\Softcase.Core.csproj": {
+              "projectPath": "C:\\Users\\jgzik\\Desktop\\SoftSmart\\SoftSmart\\v2\\SoftSmart\\Softcase.Core\\Softcase.Core.csproj"
             }
           }
         }
