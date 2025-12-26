@@ -8,13 +8,13 @@ using System.Threading.Tasks;
 using Microsoft.ML;
 using Microsoft.ML.Data;
 using Microsoft.ML.Trainers;
-using Microsoft.ML.Trainers.FastTree;
+using Microsoft.ML.Trainers.LightGbm;
 
 namespace Softcase_ML
 {
     public partial class ModeloOcupacao
     {
-        public const string RetrainFilePath =  @"C:\Users\jgzik\SoftSmart\SoftSmart\Softcase.ML\bin\Debug\net9.0\DadosPatio.csv";
+        public const string RetrainFilePath =  @"C:\Users\jgzik\OneDrive\Área de Trabalho\DadosTreinoV2.csv";
         public const char RetrainSeparatorChar = ',';
         public const bool RetrainHasHeader =  true;
         public const bool RetrainAllowQuoting =  false;
@@ -92,7 +92,7 @@ namespace Softcase_ML
             // Data process configuration with pipeline data transformations
             var pipeline = mlContext.Transforms.ReplaceMissingValues(new []{new InputOutputColumnPair(@"Hora", @"Hora"),new InputOutputColumnPair(@"DiaDaSemana", @"DiaDaSemana"),new InputOutputColumnPair(@"Temperatura", @"Temperatura"),new InputOutputColumnPair(@"Chuva", @"Chuva"),new InputOutputColumnPair(@"EventoNaRegiao", @"EventoNaRegiao"),new InputOutputColumnPair(@"EhFeriado", @"EhFeriado")})      
                                     .Append(mlContext.Transforms.Concatenate(@"Features", new []{@"Hora",@"DiaDaSemana",@"Temperatura",@"Chuva",@"EventoNaRegiao",@"EhFeriado"}))      
-                                    .Append(mlContext.Regression.Trainers.FastForest(new FastForestRegressionTrainer.Options(){NumberOfTrees=46,NumberOfLeaves=7,FeatureFraction=1F,LabelColumnName=@"Ocupacao",FeatureColumnName=@"Features"}));
+                                    .Append(mlContext.Regression.Trainers.LightGbm(new LightGbmRegressionTrainer.Options(){NumberOfLeaves=4,NumberOfIterations=426,MinimumExampleCountPerLeaf=25,LearningRate=0.9999997766729865,LabelColumnName=@"Ocupacao",FeatureColumnName=@"Features",Booster=new GradientBooster.Options(){SubsampleFraction=0.33702935073549145,FeatureFraction=0.99999999,L1Regularization=1.048082682197277E-09,L2Regularization=0.2498080765140368},MaximumBinCountPerFeature=260}));
 
             return pipeline;
         }

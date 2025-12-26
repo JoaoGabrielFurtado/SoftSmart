@@ -51,9 +51,9 @@
             Grp_Infos.Controls.Add(Lbl_Cidade);
             Grp_Infos.Controls.Add(Cbx_Cidade);
             Grp_Infos.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            Grp_Infos.Location = new Point(29, 31);
+            Grp_Infos.Location = new Point(12, 21);
             Grp_Infos.Name = "Grp_Infos";
-            Grp_Infos.Size = new Size(381, 162);
+            Grp_Infos.Size = new Size(428, 162);
             Grp_Infos.TabIndex = 8;
             Grp_Infos.TabStop = false;
             Grp_Infos.Text = "Informações";
@@ -104,7 +104,7 @@
             // 
             Lbl_Cidade.AutoSize = true;
             Lbl_Cidade.Font = new Font("Segoe UI", 9F);
-            Lbl_Cidade.Location = new Point(218, 41);
+            Lbl_Cidade.Location = new Point(256, 41);
             Lbl_Cidade.Name = "Lbl_Cidade";
             Lbl_Cidade.Size = new Size(56, 20);
             Lbl_Cidade.TabIndex = 11;
@@ -113,7 +113,7 @@
             // Cbx_Cidade
             // 
             Cbx_Cidade.FormattingEnabled = true;
-            Cbx_Cidade.Location = new Point(218, 64);
+            Cbx_Cidade.Location = new Point(256, 64);
             Cbx_Cidade.Name = "Cbx_Cidade";
             Cbx_Cidade.Size = new Size(138, 28);
             Cbx_Cidade.TabIndex = 12;
@@ -136,18 +136,18 @@
             // Dgv_Infos
             // 
             Dgv_Infos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            Dgv_Infos.Location = new Point(437, 45);
+            Dgv_Infos.Location = new Point(12, 269);
             Dgv_Infos.Margin = new Padding(3, 4, 3, 4);
             Dgv_Infos.Name = "Dgv_Infos";
             Dgv_Infos.RowHeadersWidth = 51;
-            Dgv_Infos.Size = new Size(503, 172);
+            Dgv_Infos.Size = new Size(428, 172);
             Dgv_Infos.TabIndex = 11;
             // 
             // FormPrincipal
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(968, 265);
+            ClientSize = new Size(452, 454);
             Controls.Add(Dgv_Infos);
             Controls.Add(Btn_VerificaIA);
             Controls.Add(Grp_Infos);

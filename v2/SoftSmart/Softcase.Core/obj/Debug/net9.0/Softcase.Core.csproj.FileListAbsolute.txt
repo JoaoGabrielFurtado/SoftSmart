@@ -15,7 +15,6 @@ C:\Users\jgzik\Desktop\SoftSmart\SoftSmart_Project\v2\SoftSmart\Softcase.Core\bi
 C:\Users\jgzik\Desktop\SoftSmart\SoftSmart_Project\v2\SoftSmart\Softcase.Core\bin\Debug\net9.0\Softcase.ML.dll
 C:\Users\jgzik\Desktop\SoftSmart\SoftSmart_Project\v2\SoftSmart\Softcase.Core\bin\Debug\net9.0\Softcase.ML.pdb
 C:\Users\jgzik\Desktop\SoftSmart\SoftSmart_Project\v2\SoftSmart\Softcase.Core\obj\Debug\net9.0\Softcase.E12EC8D4.Up2Date
-C:\Users\jgzik\SoftSmart\v2\SoftSmart\Softcase.Core\bin\Debug\net9.0\ModeloOcupacao.mlnet
 C:\Users\jgzik\SoftSmart\v2\SoftSmart\Softcase.Core\bin\Debug\net9.0\Softcase.Core.deps.json
 C:\Users\jgzik\SoftSmart\v2\SoftSmart\Softcase.Core\bin\Debug\net9.0\Softcase.Core.dll
 C:\Users\jgzik\SoftSmart\v2\SoftSmart\Softcase.Core\bin\Debug\net9.0\Softcase.Core.pdb
@@ -66,3 +65,4 @@ C:\Users\jgzik\Desktop\SoftSmart\SoftSmart\v2\SoftSmart\Softcase.Core\obj\Debug\
 C:\Users\jgzik\Desktop\SoftSmart\SoftSmart\v2\SoftSmart\Softcase.Core\obj\Debug\net9.0\refint\Softcase.Core.dll
 C:\Users\jgzik\Desktop\SoftSmart\SoftSmart\v2\SoftSmart\Softcase.Core\obj\Debug\net9.0\Softcase.Core.pdb
 C:\Users\jgzik\Desktop\SoftSmart\SoftSmart\v2\SoftSmart\Softcase.Core\obj\Debug\net9.0\ref\Softcase.Core.dll
+C:\Users\jgzik\SoftSmart\v2\SoftSmart\Softcase.Core\bin\Debug\net9.0\ModeloOcupacao.mlnet

@@ -64,7 +64,6 @@ C:\Users\jgzik\Desktop\SoftSmart\SoftSmart_Project\v2\SoftSmart\Softcase.Desktop
 C:\Users\jgzik\Desktop\SoftSmart\SoftSmart_Project\v2\SoftSmart\Softcase.Desktop\obj\Debug\net9.0-windows\ref\Softcase.Desktop.dll
 C:\Users\jgzik\Desktop\SoftSmart\SoftSmart_Project\v2\SoftSmart\Softcase.Desktop\bin\Debug\net9.0-windows\Nager.Date.dll
 C:\Users\jgzik\Desktop\SoftSmart\SoftSmart_Project\v2\SoftSmart\Softcase.Desktop\bin\Debug\net9.0-windows\Nager.LicenseSystem.dll
-C:\Users\jgzik\SoftSmart\v2\SoftSmart\Softcase.Desktop\bin\Debug\net9.0-windows\ModeloOcupacao.mlnet
 C:\Users\jgzik\SoftSmart\v2\SoftSmart\Softcase.Desktop\bin\Debug\net9.0-windows\Softcase.Desktop.exe
 C:\Users\jgzik\SoftSmart\v2\SoftSmart\Softcase.Desktop\bin\Debug\net9.0-windows\Softcase.Desktop.deps.json
 C:\Users\jgzik\SoftSmart\v2\SoftSmart\Softcase.Desktop\bin\Debug\net9.0-windows\Softcase.Desktop.runtimeconfig.json
@@ -265,3 +264,9 @@ C:\Users\jgzik\Desktop\SoftSmart\SoftSmart\v2\SoftSmart\Softcase.Desktop\bin\Deb
 C:\Users\jgzik\Desktop\SoftSmart\SoftSmart\v2\SoftSmart\Softcase.Desktop\obj\Debug\net9.0-windows\Softcase.AA042820.Up2Date
 C:\Users\jgzik\Desktop\SoftSmart\SoftSmart\v2\SoftSmart\Softcase.Desktop\obj\Debug\net9.0-windows\Softcase.Desktop.genruntimeconfig.cache
 C:\Users\jgzik\Desktop\SoftSmart\SoftSmart\v2\SoftSmart\Softcase.Desktop\obj\Debug\net9.0-windows\ref\Softcase.Desktop.dll
+C:\Users\jgzik\SoftSmart\v2\SoftSmart\Softcase.Desktop\bin\Debug\net9.0-windows\ModeloOcupacao.mlnet
+C:\Users\jgzik\SoftSmart\v2\SoftSmart\Softcase.Desktop\bin\Debug\net9.0-windows\Microsoft.ML.LightGbm.dll
+C:\Users\jgzik\SoftSmart\v2\SoftSmart\Softcase.Desktop\bin\Debug\net9.0-windows\runtimes\linux-x64\native\lib_lightgbm.so
+C:\Users\jgzik\SoftSmart\v2\SoftSmart\Softcase.Desktop\bin\Debug\net9.0-windows\runtimes\osx-x64\native\lib_lightgbm.dylib
+C:\Users\jgzik\SoftSmart\v2\SoftSmart\Softcase.Desktop\bin\Debug\net9.0-windows\runtimes\win-x64\native\lib_lightgbm.dll
+C:\Users\jgzik\SoftSmart\v2\SoftSmart\Softcase.Desktop\bin\Debug\net9.0-windows\runtimes\win-x64\native\lightgbm.exe

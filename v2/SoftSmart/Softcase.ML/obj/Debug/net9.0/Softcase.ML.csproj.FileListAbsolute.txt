@@ -12,7 +12,6 @@ C:\Users\jgzik\Desktop\SoftSmart\SoftSmart_Project\v2\SoftSmart\Softcase.ML\obj\
 C:\Users\jgzik\Desktop\SoftSmart\SoftSmart_Project\v2\SoftSmart\Softcase.ML\obj\Debug\net9.0\refint\Softcase.ML.dll
 C:\Users\jgzik\Desktop\SoftSmart\SoftSmart_Project\v2\SoftSmart\Softcase.ML\obj\Debug\net9.0\Softcase.ML.pdb
 C:\Users\jgzik\Desktop\SoftSmart\SoftSmart_Project\v2\SoftSmart\Softcase.ML\obj\Debug\net9.0\ref\Softcase.ML.dll
-C:\Users\jgzik\SoftSmart\v2\SoftSmart\Softcase.ML\bin\Debug\net9.0\ModeloOcupacao.mlnet
 C:\Users\jgzik\SoftSmart\v2\SoftSmart\Softcase.ML\bin\Debug\net9.0\Softcase.ML.deps.json
 C:\Users\jgzik\SoftSmart\v2\SoftSmart\Softcase.ML\bin\Debug\net9.0\Softcase.ML.dll
 C:\Users\jgzik\SoftSmart\v2\SoftSmart\Softcase.ML\bin\Debug\net9.0\Softcase.ML.pdb
@@ -54,3 +53,4 @@ C:\Users\jgzik\Desktop\SoftSmart\SoftSmart\v2\SoftSmart\Softcase.ML\obj\Debug\ne
 C:\Users\jgzik\Desktop\SoftSmart\SoftSmart\v2\SoftSmart\Softcase.ML\obj\Debug\net9.0\refint\Softcase.ML.dll
 C:\Users\jgzik\Desktop\SoftSmart\SoftSmart\v2\SoftSmart\Softcase.ML\obj\Debug\net9.0\Softcase.ML.pdb
 C:\Users\jgzik\Desktop\SoftSmart\SoftSmart\v2\SoftSmart\Softcase.ML\obj\Debug\net9.0\ref\Softcase.ML.dll
+C:\Users\jgzik\SoftSmart\v2\SoftSmart\Softcase.ML\bin\Debug\net9.0\ModeloOcupacao.mlnet

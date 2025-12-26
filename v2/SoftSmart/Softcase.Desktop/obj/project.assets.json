@@ -80,6 +80,30 @@
           }
         }
       },
+      "LightGBM/3.3.5": {
+        "type": "package",
+        "build": {
+          "build/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/linux-x64/native/lib_lightgbm.so": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/osx-x64/native/lib_lightgbm.dylib": {
+            "assetType": "native",
+            "rid": "osx-x64"
+          },
+          "runtimes/win-x64/native/lib_lightgbm.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x64/native/lightgbm.exe": {
+            "assetType": "native",
+            "rid": "win-x64"
+          }
+        }
+      },
       "Microsoft.ML/3.0.1": {
         "type": "package",
         "dependencies": {
@@ -281,6 +305,24 @@
           "runtimes/win-x86/native/FastTreeNative.dll": {
             "assetType": "native",
             "rid": "win-x86"
+          }
+        }
+      },
+      "Microsoft.ML.LightGbm/3.0.1": {
+        "type": "package",
+        "dependencies": {
+          "LightGBM": "3.3.5",
+          "Microsoft.ML": "3.0.1",
+          "Microsoft.ML.FastTree": "3.0.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.ML.LightGbm.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.ML.LightGbm.dll": {
+            "related": ".xml"
           }
         }
       },
@@ -560,6 +602,7 @@
         "dependencies": {
           "Microsoft.ML": "3.0.1",
           "Microsoft.ML.FastTree": "3.0.1",
+          "Microsoft.ML.LightGbm": "3.0.1",
           "Plotly.NET": "3.0.1"
         },
         "compile": {
@@ -627,6 +670,23 @@
         "lib/netstandard2.1/tr/FSharp.Core.resources.dll",
         "lib/netstandard2.1/zh-Hans/FSharp.Core.resources.dll",
         "lib/netstandard2.1/zh-Hant/FSharp.Core.resources.dll"
+      ]
+    },
+    "LightGBM/3.3.5": {
+      "sha512": "6LwKO13R9q8zZHbYNeHhayUj3/sN410L6B9QZfV/tyzuoaddur1Uy0yV0gK4FfLl3FVC0LxnfiCOrHva0xX3yQ==",
+      "type": "package",
+      "path": "lightgbm/3.3.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/LightGBM.props",
+        "build/LightGBM.targets",
+        "lightgbm.3.3.5.nupkg.sha512",
+        "lightgbm.nuspec",
+        "runtimes/linux-x64/native/lib_lightgbm.so",
+        "runtimes/osx-x64/native/lib_lightgbm.dylib",
+        "runtimes/win-x64/native/lib_lightgbm.dll",
+        "runtimes/win-x64/native/lightgbm.exe"
       ]
     },
     "Microsoft.ML/3.0.1": {
@@ -734,6 +794,22 @@
         "runtimes/osx-x64/native/libFastTreeNative.dylib",
         "runtimes/win-x64/native/FastTreeNative.dll",
         "runtimes/win-x86/native/FastTreeNative.dll"
+      ]
+    },
+    "Microsoft.ML.LightGbm/3.0.1": {
+      "sha512": "SCAiuo4FKNBoEijw+UZFdCQrTvHQ0v4W96hxxt9WHZOFIzfpVsKe6XiMPfwd665ZHhIygxMyCxH9ZFgj76Rehw==",
+      "type": "package",
+      "path": "microsoft.ml.lightgbm/3.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netstandard2.0/Microsoft.ML.LightGbm.dll",
+        "lib/netstandard2.0/Microsoft.ML.LightGbm.xml",
+        "microsoft.ml.lightgbm.3.0.1.nupkg.sha512",
+        "microsoft.ml.lightgbm.nuspec",
+        "mlnetlogo.png"
       ]
     },
     "Microsoft.NETCore.Platforms/1.1.0": {
@@ -1537,11 +1613,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jgzik\\Desktop\\SoftSmart\\SoftSmart\\v2\\SoftSmart\\Softcase.Desktop\\Softcase.Desktop.csproj",
+      "projectUniqueName": "C:\\Users\\jgzik\\SoftSmart\\v2\\SoftSmart\\Softcase.Desktop\\Softcase.Desktop.csproj",
       "projectName": "Softcase.Desktop",
-      "projectPath": "C:\\Users\\jgzik\\Desktop\\SoftSmart\\SoftSmart\\v2\\SoftSmart\\Softcase.Desktop\\Softcase.Desktop.csproj",
+      "projectPath": "C:\\Users\\jgzik\\SoftSmart\\v2\\SoftSmart\\Softcase.Desktop\\Softcase.Desktop.csproj",
       "packagesPath": "C:\\Users\\jgzik\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jgzik\\Desktop\\SoftSmart\\SoftSmart\\v2\\SoftSmart\\Softcase.Desktop\\obj\\",
+      "outputPath": "C:\\Users\\jgzik\\SoftSmart\\v2\\SoftSmart\\Softcase.Desktop\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1556,14 +1632,15 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net9.0-windows7.0": {
           "targetAlias": "net9.0-windows",
           "projectReferences": {
-            "C:\\Users\\jgzik\\Desktop\\SoftSmart\\SoftSmart\\v2\\SoftSmart\\Softcase.Core\\Softcase.Core.csproj": {
-              "projectPath": "C:\\Users\\jgzik\\Desktop\\SoftSmart\\SoftSmart\\v2\\SoftSmart\\Softcase.Core\\Softcase.Core.csproj"
+            "C:\\Users\\jgzik\\SoftSmart\\v2\\SoftSmart\\Softcase.Core\\Softcase.Core.csproj": {
+              "projectPath": "C:\\Users\\jgzik\\SoftSmart\\v2\\SoftSmart\\Softcase.Core\\Softcase.Core.csproj"
             }
           }
         }

@@ -8,7 +8,7 @@
     "KeepPunctuations": false,
     "AllowQuoting": false,
     "Type": "TabularFile",
-    "FilePath": "C:\\Users\\jgzik\\SoftSmart\\SoftSmart\\Softcase.ML\\bin\\Debug\\net9.0\\DadosPatio.csv",
+    "FilePath": "C:\\Users\\jgzik\\OneDrive\\Área de Trabalho\\DadosTreinoV2.csv",
     "Delimiter": ",",
     "DecimalMarker": ".",
     "HasHeader": true,
@@ -82,147 +82,9 @@
       {
         "Version": 1,
         "Type": "Trial",
-        "TrainerName": "FastForestRegression",
-        "Score": 0.95226799613936675,
-        "RuntimeInSeconds": 0.5,
-        "Parameter": {
-          "_SCHEMA_": "e0 * e1 * e3",
-          "e0": {
-            "OutputColumnNames": [
-              "Hora",
-              "DiaDaSemana",
-              "Temperatura",
-              "Chuva",
-              "EventoNaRegiao",
-              "EhFeriado"
-            ],
-            "InputColumnNames": [
-              "Hora",
-              "DiaDaSemana",
-              "Temperatura",
-              "Chuva",
-              "EventoNaRegiao",
-              "EhFeriado"
-            ]
-          },
-          "e1": {
-            "InputColumnNames": [
-              "Hora",
-              "DiaDaSemana",
-              "Temperatura",
-              "Chuva",
-              "EventoNaRegiao",
-              "EhFeriado"
-            ],
-            "OutputColumnName": "Features"
-          },
-          "e3": {
-            "NumberOfTrees": 46,
-            "NumberOfLeaves": 7,
-            "FeatureFraction": 1.0,
-            "LabelColumnName": "Ocupacao",
-            "FeatureColumnName": "Features"
-          }
-        }
-      },
-      {
-        "Version": 1,
-        "Type": "Trial",
-        "TrainerName": "FastForestRegression",
-        "Score": 0.95223072736224457,
-        "RuntimeInSeconds": 0.373,
-        "Parameter": {
-          "_SCHEMA_": "e0 * e1 * e3",
-          "e0": {
-            "OutputColumnNames": [
-              "Hora",
-              "DiaDaSemana",
-              "Temperatura",
-              "Chuva",
-              "EventoNaRegiao",
-              "EhFeriado"
-            ],
-            "InputColumnNames": [
-              "Hora",
-              "DiaDaSemana",
-              "Temperatura",
-              "Chuva",
-              "EventoNaRegiao",
-              "EhFeriado"
-            ]
-          },
-          "e1": {
-            "InputColumnNames": [
-              "Hora",
-              "DiaDaSemana",
-              "Temperatura",
-              "Chuva",
-              "EventoNaRegiao",
-              "EhFeriado"
-            ],
-            "OutputColumnName": "Features"
-          },
-          "e3": {
-            "NumberOfTrees": 23,
-            "NumberOfLeaves": 5,
-            "FeatureFraction": 1.0,
-            "LabelColumnName": "Ocupacao",
-            "FeatureColumnName": "Features"
-          }
-        }
-      },
-      {
-        "Version": 1,
-        "Type": "Trial",
-        "TrainerName": "FastForestRegression",
-        "Score": 0.95220134523770183,
-        "RuntimeInSeconds": 0.291,
-        "Parameter": {
-          "_SCHEMA_": "e0 * e1 * e3",
-          "e0": {
-            "OutputColumnNames": [
-              "Hora",
-              "DiaDaSemana",
-              "Temperatura",
-              "Chuva",
-              "EventoNaRegiao",
-              "EhFeriado"
-            ],
-            "InputColumnNames": [
-              "Hora",
-              "DiaDaSemana",
-              "Temperatura",
-              "Chuva",
-              "EventoNaRegiao",
-              "EhFeriado"
-            ]
-          },
-          "e1": {
-            "InputColumnNames": [
-              "Hora",
-              "DiaDaSemana",
-              "Temperatura",
-              "Chuva",
-              "EventoNaRegiao",
-              "EhFeriado"
-            ],
-            "OutputColumnName": "Features"
-          },
-          "e3": {
-            "NumberOfTrees": 9,
-            "NumberOfLeaves": 9,
-            "FeatureFraction": 1.0,
-            "LabelColumnName": "Ocupacao",
-            "FeatureColumnName": "Features"
-          }
-        }
-      },
-      {
-        "Version": 1,
-        "Type": "Trial",
         "TrainerName": "LightGbmRegression",
-        "Score": 0.95220131568509991,
-        "RuntimeInSeconds": 1.234,
+        "Score": 0.97931516828542309,
+        "RuntimeInSeconds": 0.895,
         "Parameter": {
           "_SCHEMA_": "e0 * e1 * e4",
           "e0": {
@@ -256,14 +118,66 @@
           },
           "e4": {
             "NumberOfLeaves": 4,
-            "MinimumExampleCountPerLeaf": 20,
-            "LearningRate": 0.35220733350648492,
-            "NumberOfTrees": 48,
-            "SubsampleFraction": 0.99999977667298645,
-            "MaximumBinCountPerFeature": 243,
+            "MinimumExampleCountPerLeaf": 25,
+            "LearningRate": 0.99999977667298645,
+            "NumberOfTrees": 426,
+            "SubsampleFraction": 0.33702935073549145,
+            "MaximumBinCountPerFeature": 260,
             "FeatureFraction": 0.99999999,
-            "L1Regularization": 2.9547280168182256E-10,
-            "L2Regularization": 0.99999977667298645,
+            "L1Regularization": 1.048082682197277E-09,
+            "L2Regularization": 0.2498080765140368,
+            "LabelColumnName": "Ocupacao",
+            "FeatureColumnName": "Features"
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.977540629591962,
+        "RuntimeInSeconds": 0.795,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e4",
+          "e0": {
+            "OutputColumnNames": [
+              "Hora",
+              "DiaDaSemana",
+              "Temperatura",
+              "Chuva",
+              "EventoNaRegiao",
+              "EhFeriado"
+            ],
+            "InputColumnNames": [
+              "Hora",
+              "DiaDaSemana",
+              "Temperatura",
+              "Chuva",
+              "EventoNaRegiao",
+              "EhFeriado"
+            ]
+          },
+          "e1": {
+            "InputColumnNames": [
+              "Hora",
+              "DiaDaSemana",
+              "Temperatura",
+              "Chuva",
+              "EventoNaRegiao",
+              "EhFeriado"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e4": {
+            "NumberOfLeaves": 989,
+            "MinimumExampleCountPerLeaf": 20,
+            "LearningRate": 0.99999977667298645,
+            "NumberOfTrees": 4,
+            "SubsampleFraction": 0.96915385202929272,
+            "MaximumBinCountPerFeature": 212,
+            "FeatureFraction": 0.99999999,
+            "L1Regularization": 3.456818468180404E-10,
+            "L2Regularization": 0.54764451415449289,
             "LabelColumnName": "Ocupacao",
             "FeatureColumnName": "Features"
           }
@@ -273,8 +187,8 @@
         "Version": 1,
         "Type": "Trial",
         "TrainerName": "FastForestRegression",
-        "Score": 0.952028247530941,
-        "RuntimeInSeconds": 0.297,
+        "Score": 0.95694059936679765,
+        "RuntimeInSeconds": 0.596,
         "Parameter": {
           "_SCHEMA_": "e0 * e1 * e3",
           "e0": {
@@ -307,9 +221,101 @@
             "OutputColumnName": "Features"
           },
           "e3": {
-            "NumberOfTrees": 7,
+            "NumberOfTrees": 9,
+            "NumberOfLeaves": 5,
+            "FeatureFraction": 0.99916184,
+            "LabelColumnName": "Ocupacao",
+            "FeatureColumnName": "Features"
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "FastForestRegression",
+        "Score": 0.95640851903158675,
+        "RuntimeInSeconds": 1.078,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e3",
+          "e0": {
+            "OutputColumnNames": [
+              "Hora",
+              "DiaDaSemana",
+              "Temperatura",
+              "Chuva",
+              "EventoNaRegiao",
+              "EhFeriado"
+            ],
+            "InputColumnNames": [
+              "Hora",
+              "DiaDaSemana",
+              "Temperatura",
+              "Chuva",
+              "EventoNaRegiao",
+              "EhFeriado"
+            ]
+          },
+          "e1": {
+            "InputColumnNames": [
+              "Hora",
+              "DiaDaSemana",
+              "Temperatura",
+              "Chuva",
+              "EventoNaRegiao",
+              "EhFeriado"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e3": {
+            "NumberOfTrees": 4,
             "NumberOfLeaves": 4,
             "FeatureFraction": 1.0,
+            "LabelColumnName": "Ocupacao",
+            "FeatureColumnName": "Features"
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "FastForestRegression",
+        "Score": 0.9264996118017037,
+        "RuntimeInSeconds": 0.303,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e3",
+          "e0": {
+            "OutputColumnNames": [
+              "Hora",
+              "DiaDaSemana",
+              "Temperatura",
+              "Chuva",
+              "EventoNaRegiao",
+              "EhFeriado"
+            ],
+            "InputColumnNames": [
+              "Hora",
+              "DiaDaSemana",
+              "Temperatura",
+              "Chuva",
+              "EventoNaRegiao",
+              "EhFeriado"
+            ]
+          },
+          "e1": {
+            "InputColumnNames": [
+              "Hora",
+              "DiaDaSemana",
+              "Temperatura",
+              "Chuva",
+              "EventoNaRegiao",
+              "EhFeriado"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e3": {
+            "NumberOfTrees": 6,
+            "NumberOfLeaves": 13,
+            "FeatureFraction": 0.901148,
             "LabelColumnName": "Ocupacao",
             "FeatureColumnName": "Features"
           }
@@ -327,7 +333,7 @@
     },
     "Schema": "e0 * e1 * (e2 + e3 + e4 + e5 + e6)",
     "MetricName": "RSquared",
-    "ModelFilePath": "C:\\Users\\jgzik\\SoftSmart\\SoftSmart\\Softcase.ML\\ModeloOcupacao.mlnet"
+    "ModelFilePath": "C:\\Users\\jgzik\\SoftSmart\\v2\\SoftSmart\\Softcase.ML\\ModeloOcupacao.mlnet"
   },
   "Type": "TrainingConfig",
   "Version": 5,
@@ -335,12 +341,12 @@
     "Version": 2,
     "Subsampling": false,
     "Type": "RegressionTrainingOption",
-    "TrainingTime": 60,
+    "TrainingTime": 150,
     "LabelColumn": "Ocupacao",
     "ValidationOption": {
       "Version": 0,
-      "Type": "CrossValidationValidationOption",
-      "NumberOfFolds": 5
+      "Type": "TrainValidateSplitValidationOption",
+      "SplitRatio": 0.2
     }
   }
 }

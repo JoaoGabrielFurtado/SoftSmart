@@ -2,7 +2,8 @@
 
 public class ResultadoConsolidado
 {
-    public DateTime Data { get; set; }
+    public string Data { get; set; }
+    public string DiaSemana { get; set; }
     public float Temperatura { get; set; }
     public int OcupacaoPrevista { get; set; }
 

@@ -1,3 +1,4 @@
+ï»¿using Softcase.ML; 
 using Newtonsoft.Json;
 using Softcase.Core;
 using Softcase.Core.DTOs;
@@ -34,7 +35,7 @@ namespace Softcase.Desktop
             //COMBO BOX CIDADES
             List<string> Cidades = new List<string>()
             {
-                "Santos", "São Paulo", "Salvador", "São Vicente", "Guarujá", "Praia Grande", "Rio de Janeiro", "Curitiba", "Porto Alegre", "Brasília"
+                "Santos", "SÃ£o Paulo", "Salvador", "SÃ£o Vicente", "GuarujÃ¡", "Praia Grande", "Rio de Janeiro", "Curitiba", "Porto Alegre", "BrasÃ­lia"
             };
             foreach (string s in Cidades)
             {
@@ -58,38 +59,41 @@ namespace Softcase.Desktop
             if (temEvento)
                 diasComEvento = ChamaFormEvento(prever);
 
+            //flexibilizar no futuro
+            float capacidadeTotal = 250f;
+
             foreach (var item in _listaPrevisao)
             {
                 var diaSemana = item.Data.DayOfWeek;
                 TimeSpan hora = item.Data.TimeOfDay;
                 float evento = diasComEvento.Contains(item.Data.Date) ? 1 : 0;
                 float temChuva = item.Chuva;
-                float ehFeriado = ServicoDeCalendario.EhFeriado(item.Data.Date) ? 1 : 0;
+                float ehFeriado = item.EhFeriado;
+
                 int ocupacao = ServicoDeIA.RetornaResultadoIA((float)hora.TotalHours, (float)diaSemana, item.Temperatura, temChuva, evento, ehFeriado);
+                int porcentagemOcupacao = (int)Math.Round((ocupacao / capacidadeTotal) * 100);
+                if (porcentagemOcupacao > 100) porcentagemOcupacao = 100;
+
                 string motivo = "AINDA NADA";
 
                 ResultadoConsolidado resultado = new ResultadoConsolidado
                 {
-                    Data = item.Data,
+                    Data = item.Data.ToString("dd/MM/y"),
+                    DiaSemana = item.Data.ToString("dddd"),
                     Temperatura = item.Temperatura,
-                    OcupacaoPrevista = ocupacao,
-                    Evento = evento == 1 ? "Tem evento" : "Não tem evento",
+                    OcupacaoPrevista = porcentagemOcupacao,
+                    Evento = evento == 1 ? "Tem evento" : "NÃ£o tem evento",
                     MotivoPrincipal = motivo
                 };
-
-                MessageBox.Show(resultado.Evento.ToString());
-
                 _listaResultados.Add(resultado);
-
             }
 
             Dgv_Infos.DataSource = " ";
             Dgv_Infos.DataSource = _listaResultados;
-
         }
         private void Lbl_Informacoes_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Caso possua um ou mais eventos nos dias que você deseja prever marque \"TEM EVENTO?\" e preencha as opções.", "Tem Eventos?", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Caso possua um ou mais eventos nos dias que vocÃª deseja prever marque \"TEM EVENTO?\" e preencha as opÃ§Ãµes.", "Tem Eventos?", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void Cbx_Evento_CheckedChanged(object sender, EventArgs e)
@@ -142,7 +146,8 @@ namespace Softcase.Desktop
                     {
                         Data = Convert.ToDateTime(itemEncontrado.dt_txt),
                         Temperatura = (float)Math.Round(itemEncontrado.main.temp),
-                        Chuva = indicadorChuva
+                        Chuva = indicadorChuva,
+                        EhFeriado = feriado ? 1 : 0
                     };
                     listaPrevisaoFutura.Add(p);
                 }
@@ -163,7 +168,5 @@ namespace Softcase.Desktop
 
             return new List<DateTime>();
         }
-
-
     }
 }

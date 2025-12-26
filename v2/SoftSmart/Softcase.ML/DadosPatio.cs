@@ -2,8 +2,6 @@
 {
     public class DadosPatio
     {
-
-
         //OBS: declarei todas as props como float pois o ML entende melhor. 
 
         // Entradas 
