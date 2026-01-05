@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace Softcase.Core;
+namespace Softcase.Core.Classes;
 
 public class ServicoDeClima
 {

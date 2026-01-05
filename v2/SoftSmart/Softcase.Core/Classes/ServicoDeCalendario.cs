@@ -1,6 +1,6 @@
 ﻿using Nager.Date;
 
-namespace Softcase.Core;
+namespace Softcase.Core.Classes;
 
 public static class ServicoDeCalendario
 {
@@ -15,7 +15,7 @@ public static class ServicoDeCalendario
         {
             return IsFeriadoBasicoBR(data.Date);
         }
-        catch (System.Exception)
+        catch (Exception)
         {
             return IsFeriadoBasicoBR(data.Date);
         }
@@ -49,6 +49,7 @@ public static class ServicoDeCalendario
 
         // (Dezembro)
         if (dia.Month == 12 && dia.Day == 25) return true; // Natal
+        if (dia.Month == 12 && dia.Day == 31) return true; // Natal
 
         DateTime pascoa = CalcularPascoa(ano);
 
@@ -76,7 +77,7 @@ public static class ServicoDeCalendario
         int m = (a + 11 * h + 22 * l) / 451;
 
         int mes = (h + l - 7 * m + 114) / 31;
-        int dia = ((h + l - 7 * m + 114) % 31) + 1;
+        int dia = (h + l - 7 * m + 114) % 31 + 1;
 
         return new DateTime(ano, mes, dia);
     }

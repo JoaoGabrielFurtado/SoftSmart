@@ -270,3 +270,10 @@ C:\Users\jgzik\SoftSmart\v2\SoftSmart\Softcase.Desktop\bin\Debug\net9.0-windows\
 C:\Users\jgzik\SoftSmart\v2\SoftSmart\Softcase.Desktop\bin\Debug\net9.0-windows\runtimes\osx-x64\native\lib_lightgbm.dylib
 C:\Users\jgzik\SoftSmart\v2\SoftSmart\Softcase.Desktop\bin\Debug\net9.0-windows\runtimes\win-x64\native\lib_lightgbm.dll
 C:\Users\jgzik\SoftSmart\v2\SoftSmart\Softcase.Desktop\bin\Debug\net9.0-windows\runtimes\win-x64\native\lightgbm.exe
+C:\Users\jgzik\Desktop\SoftSmart\SoftSmart\v2\SoftSmart\Softcase.Desktop\bin\Debug\net9.0-windows\Microsoft.ML.LightGbm.dll
+C:\Users\jgzik\Desktop\SoftSmart\SoftSmart\v2\SoftSmart\Softcase.Desktop\bin\Debug\net9.0-windows\runtimes\linux-x64\native\lib_lightgbm.so
+C:\Users\jgzik\Desktop\SoftSmart\SoftSmart\v2\SoftSmart\Softcase.Desktop\bin\Debug\net9.0-windows\runtimes\osx-x64\native\lib_lightgbm.dylib
+C:\Users\jgzik\Desktop\SoftSmart\SoftSmart\v2\SoftSmart\Softcase.Desktop\bin\Debug\net9.0-windows\runtimes\win-x64\native\lib_lightgbm.dll
+C:\Users\jgzik\Desktop\SoftSmart\SoftSmart\v2\SoftSmart\Softcase.Desktop\bin\Debug\net9.0-windows\runtimes\win-x64\native\lightgbm.exe
+C:\Users\jgzik\Desktop\SoftSmart\SoftSmart\v2\SoftSmart\Softcase.Desktop\obj\Debug\net9.0-windows\Softcase.Desktop.Forms.FormDashboard.resources
+C:\Users\jgzik\Desktop\SoftSmart\SoftSmart\v2\SoftSmart\Softcase.Desktop\obj\Debug\net9.0-windows\Softcase.Desktop.Forms.UC_TelaResultados.resources

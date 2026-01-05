@@ -1,5 +1,5 @@
 ﻿using Softcase_ML;
-namespace Softcase.Core;
+namespace Softcase.Core.Classes;
 
 public static class ServicoDeIA
 {

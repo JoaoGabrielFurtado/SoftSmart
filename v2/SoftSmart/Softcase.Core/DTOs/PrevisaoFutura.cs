@@ -8,4 +8,8 @@ public class PrevisaoFutura
     public float Chuva { get; set; }
 
     public float EhFeriado { get; set; }
+
+    public float TempManha { get; set; }
+    public float TempTarde { get; set; }
+    public float TempNoite { get; set; }
 }
