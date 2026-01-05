@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormDashboard));
             flp_Galeria = new FlowLayoutPanel();
             SuspendLayout();
             // 
@@ -46,8 +47,11 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(312, 352);
             Controls.Add(flp_Galeria);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "FormDashboard";
-            Text = "Form1";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Previsão";
             ResumeLayout(false);
         }
 
