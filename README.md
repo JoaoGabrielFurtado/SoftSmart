@@ -66,7 +66,7 @@ O projeto foi construído utilizando a última versão do ecossistema .NET:
     * `System.Net.Http`: Comunicação com serviços externos.
 * **Front-end (Web):**
     * Bootstrap 5 (Estilização responsiva).
-    * CSS Customizado (Identidade visual corporativa Softcase).
+    * CSS Customizado (Identidade visual corporativa).
     * HTML5 Datalist (Busca inteligente).
 
 ---
