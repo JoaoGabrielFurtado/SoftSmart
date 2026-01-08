@@ -1,12 +1,15 @@
-﻿using Softcase.ML; 
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using Softcase.Core;
+using Softcase.Core.Classes;
 using Softcase.Core.DTOs;
+using Softcase.Desktop.Forms;
+using Softcase.ML; 
 using System.Linq.Expressions;
+using System.Net.Http;
 using System.Runtime.Intrinsics.X86;
 using System.Threading.Tasks;
-using Softcase.Core.Classes;
-using Softcase.Desktop.Forms;
+using System.Windows.Forms;
+using static System.Net.WebRequestMethods;
 
 namespace Softcase.Desktop
 {
@@ -17,11 +20,14 @@ namespace Softcase.Desktop
         private float ehFeriado = 0;
         private bool temEvento = false;
         private DateTime data = DateTime.Now;
-        public ServicoDeClima servicoDeClima = new();
+        private static readonly HttpClient _httpClient = new HttpClient();
+        private List<string> ListaCidade = new();
+        private ServicoDePrevisao servicoDePrevisao = new();
 
         public FormPrincipal()
         {
             InitializeComponent();
+
 
             //COMBO BOX PREVER
             List<string> Prever = new List<string>()
@@ -33,17 +39,12 @@ namespace Softcase.Desktop
                 Cbx_Prever.Items.Add(s);
             }
             Cbx_Prever.DropDownStyle = ComboBoxStyle.DropDownList;
+        }
 
+        private void FormPrincipal_Load(object sender, EventArgs e)
+        {
             //COMBO BOX CIDADES
-            List<string> Cidades = new List<string>()
-            {
-                "Santos", "São Paulo", "Salvador", "São Vicente", "Guarujá", "Praia Grande", "Rio de Janeiro", "Curitiba", "Porto Alegre", "Brasília"
-            };
-            foreach (string s in Cidades)
-            {
-                Cbx_Cidade.Items.Add(s);
-            }
-            Cbx_Cidade.DropDownStyle = ComboBoxStyle.DropDownList;
+            PopulaCidades();
         }
 
 
@@ -60,14 +61,14 @@ namespace Softcase.Desktop
                 MessageBox.Show("Por favor, selecione quantos dias deseja prever.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-        
+
             Btn_VerificaIA.Enabled = false;
             Cursor = Cursors.WaitCursor;
 
             try
             {
                 string cidade = Cbx_Cidade.Text;
-                List<PrevisaoFutura> _listaPrevisao = await RetornaPrevisaoFuturaAsync(cidade, prever);
+                List<PrevisaoFutura> _listaPrevisao = await servicoDePrevisao.RetornaPrevisaoFuturaAsync(cidade, prever);
 
                 List<ResultadoConsolidado> _listaResultados = new();
 
@@ -76,7 +77,6 @@ namespace Softcase.Desktop
                 if (temEvento)
                     diasComEvento = ChamaFormEvento(prever);
 
-                //flexibilizar no futuro
                 float capacidadeTotalIA = 250f;
 
 
@@ -126,7 +126,7 @@ namespace Softcase.Desktop
                 FormDashboard janelaDashboard = new FormDashboard(_listaResultados);
                 janelaDashboard.ShowDialog();
             }
-            catch(Exception erro)
+            catch (Exception erro)
             {
                 MessageBox.Show($"Ocorreu um erro: {erro.Message}");
             }
@@ -149,62 +149,34 @@ namespace Softcase.Desktop
                 temEvento = false;
         }
 
-
-        //METODOS
-        public async Task<List<PrevisaoFutura>> RetornaPrevisaoFuturaAsync(string cidade, int prever)
+        private void Cbx_Cidade_KeyDown(object sender, KeyEventArgs e)
         {
-            List<PrevisaoFutura> listaPrevisaoFutura = new();
-            RespostaClima retorno = await servicoDeClima.VerificaClimaAsync(cidade);
-
-            if (retorno == null || retorno.list == null) return listaPrevisaoFutura;
-
-            for (int i = 1; i <= prever; i++)
+            if (e.KeyCode == Keys.Enter)
             {
-                DateTime dataAlvo = DateTime.Now.Date.AddDays(i);
+                e.SuppressKeyPress = true;
+                e.Handled = true;
 
-                var registrosDoDia = retorno.list.Where(x => Convert.ToDateTime(x.dt_txt).Date == dataAlvo).ToList();
+                int indexExato = Cbx_Cidade.FindStringExact(Cbx_Cidade.Text);
 
-                if (registrosDoDia.Any())
+                if (indexExato != -1)
                 {
-                    var principal = registrosDoDia.FirstOrDefault(x => Convert.ToDateTime(x.dt_txt).Hour == 12) ?? registrosDoDia.First();
+                    Cbx_Cidade.SelectedIndex = indexExato;
+                    return;
+                }
 
-
-                    var itemManha = registrosDoDia.FirstOrDefault(x => Convert.ToDateTime(x.dt_txt).Hour == 9) ?? registrosDoDia.First();
-
-                    var itemTarde = registrosDoDia.FirstOrDefault(x => Convert.ToDateTime(x.dt_txt).Hour == 15) ?? principal;
-
-                    var itemNoite = registrosDoDia.FirstOrDefault(x => Convert.ToDateTime(x.dt_txt).Hour == 21) ?? registrosDoDia.Last();
-
-
-                    float indicadorChuva = 0;
-                    if (principal.weather != null && principal.weather.Length > 0)
-                    {
-                        string condicao = principal.weather[0].main;
-                        if (condicao == "Rain" || condicao == "Thunderstorm" || condicao == "Drizzle")
-                            indicadorChuva = 1;
-                    }
-
-                    bool feriado = ServicoDeCalendario.EhFeriado(dataAlvo);
-
-                    PrevisaoFutura p = new PrevisaoFutura
-                    {
-                        Data = dataAlvo,
-                        Temperatura = (float)Math.Round(principal.main.temp), 
-                        Chuva = indicadorChuva,
-                        EhFeriado = feriado ? 1 : 0,
-
-
-                        TempManha = (float)Math.Round(itemManha.main.temp),
-                        TempTarde = (float)Math.Round(itemTarde.main.temp),
-                        TempNoite = (float)Math.Round(itemNoite.main.temp)
-                    };
-                    listaPrevisaoFutura.Add(p);
+                int indexAproximado = Cbx_Cidade.FindString(Cbx_Cidade.Text);
+                if (indexAproximado != -1)
+                {
+                    Cbx_Cidade.SelectedIndex = indexAproximado;
+                    Cbx_Cidade.Text = Cbx_Cidade.Items[indexAproximado].ToString();
+                    Cbx_Cidade.Select(Cbx_Cidade.Text.Length, 0);
                 }
             }
-            return listaPrevisaoFutura;
         }
 
 
+
+        //METODOS
         #region METODO ANTIGO
         //public async Task<List<PrevisaoFutura>> RetornaPrevisaoFuturaAsync(string cidade, int prever)
         //{
@@ -256,6 +228,56 @@ namespace Softcase.Desktop
 
         #endregion
 
+        private async void PopulaCidades()
+        {
+            try
+            {
+                Cbx_Cidade.Enabled = false;
+                Cbx_Cidade.Items.Clear();
+                Cbx_Cidade.Items.Add("Carregando...");
+                Cbx_Cidade.SelectedIndex = 0;
+
+                string url = "https://servicodados.ibge.gov.br/api/v1/localidades/municipios?orderBy=asc";
+
+                using (var resposta = await _httpClient.GetAsync(url))
+                {
+                    resposta.EnsureSuccessStatusCode();
+                    var jsonString = await resposta.Content.ReadAsStringAsync();
+
+                    var dadosCidades = JsonConvert.DeserializeObject<List<dynamic>>(jsonString);
+
+                    Cbx_Cidade.BeginUpdate();
+
+                    Cbx_Cidade.Items.Clear();
+
+                    foreach (var c in dadosCidades)
+                    {
+                        Cbx_Cidade.Items.Add(c.nome.ToString());
+                    }
+
+                    Cbx_Cidade.EndUpdate();
+
+                    Cbx_Cidade.AutoCompleteSource = AutoCompleteSource.ListItems;
+                    Cbx_Cidade.AutoCompleteMode = AutoCompleteMode.Suggest;
+                    Cbx_Cidade.DropDownStyle = ComboBoxStyle.DropDown;
+
+                    if (Cbx_Cidade.Items.Count > 0)
+                    {
+                        Cbx_Cidade.SelectedIndex = 0;
+                    }
+
+                    Cbx_Cidade.Enabled = true;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Erro ao carregar cidades: {ex.Message}", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                Cbx_Cidade.Items.Clear();
+                Cbx_Cidade.Enabled = true;
+            }
+        }
+
         private List<DateTime> ChamaFormEvento(int prever)
         {
             Eventos evento = new Eventos(prever);
@@ -269,5 +291,7 @@ namespace Softcase.Desktop
 
             return new List<DateTime>();
         }
+
+
     }
 }

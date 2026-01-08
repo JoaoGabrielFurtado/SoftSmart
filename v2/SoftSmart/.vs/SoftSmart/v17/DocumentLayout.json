@@ -3,32 +3,68 @@
   "WorkspaceRootPath": "C:\\Users\\jgzik\\Desktop\\SoftSmart\\SoftSmart\\v2\\SoftSmart\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{969DF1AF-8914-46EA-BFDF-EAB575E930C0}|Softcase.Desktop\\Softcase.Desktop.csproj|c:\\users\\jgzik\\desktop\\softsmart\\softsmart\\v2\\softsmart\\softcase.desktop\\formprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{969DF1AF-8914-46EA-BFDF-EAB575E930C0}|Softcase.Desktop\\Softcase.Desktop.csproj|solutionrelative:softcase.desktop\\formprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2FBB5283-9CDB-4602-9849-E9A272160F41}|Softcase.Core\\Softcase.Core.csproj|c:\\users\\jgzik\\desktop\\softsmart\\softsmart\\v2\\softsmart\\softcase.core\\classes\\servicodemotivo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2FBB5283-9CDB-4602-9849-E9A272160F41}|Softcase.Core\\Softcase.Core.csproj|solutionrelative:softcase.core\\classes\\servicodemotivo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2FBB5283-9CDB-4602-9849-E9A272160F41}|Softcase.Core\\Softcase.Core.csproj|c:\\users\\jgzik\\desktop\\softsmart\\softsmart\\v2\\softsmart\\softcase.core\\servicodeia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2FBB5283-9CDB-4602-9849-E9A272160F41}|Softcase.Core\\Softcase.Core.csproj|solutionrelative:softcase.core\\servicodeia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{969DF1AF-8914-46EA-BFDF-EAB575E930C0}|Softcase.Desktop\\Softcase.Desktop.csproj|c:\\users\\jgzik\\desktop\\softsmart\\softsmart\\v2\\softsmart\\softcase.desktop\\forms\\formdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{969DF1AF-8914-46EA-BFDF-EAB575E930C0}|Softcase.Desktop\\Softcase.Desktop.csproj|solutionrelative:softcase.desktop\\forms\\formdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2FBB5283-9CDB-4602-9849-E9A272160F41}|Softcase.Core\\Softcase.Core.csproj|c:\\users\\jgzik\\desktop\\softsmart\\softsmart\\v2\\softsmart\\softcase.core\\dtos\\resultadoconsolidado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2FBB5283-9CDB-4602-9849-E9A272160F41}|Softcase.Core\\Softcase.Core.csproj|solutionrelative:softcase.core\\dtos\\resultadoconsolidado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{969DF1AF-8914-46EA-BFDF-EAB575E930C0}|Softcase.Desktop\\Softcase.Desktop.csproj|C:\\Users\\jgzik\\Desktop\\SoftSmart\\SoftSmart\\v2\\SoftSmart\\softcase.desktop\\forms\\formprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{969DF1AF-8914-46EA-BFDF-EAB575E930C0}|Softcase.Desktop\\Softcase.Desktop.csproj|solutionrelative:softcase.desktop\\forms\\formprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{969DF1AF-8914-46EA-BFDF-EAB575E930C0}|Softcase.Desktop\\Softcase.Desktop.csproj|C:\\Users\\jgzik\\Desktop\\SoftSmart\\SoftSmart\\v2\\SoftSmart\\softcase.desktop\\formprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{969DF1AF-8914-46EA-BFDF-EAB575E930C0}|Softcase.Desktop\\Softcase.Desktop.csproj|solutionrelative:softcase.desktop\\formprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{60F11D44-4A3A-4617-A254-0DF380142DA5}|Softcase.Web\\Softcase.Web.csproj|c:\\users\\jgzik\\desktop\\softsmart\\softsmart\\v2\\softsmart\\softcase.web\\components\\pages\\simulador.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{60F11D44-4A3A-4617-A254-0DF380142DA5}|Softcase.Web\\Softcase.Web.csproj|solutionrelative:softcase.web\\components\\pages\\simulador.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{969DF1AF-8914-46EA-BFDF-EAB575E930C0}|Softcase.Desktop\\Softcase.Desktop.csproj|c:\\users\\jgzik\\desktop\\softsmart\\softsmart\\v2\\softsmart\\softcase.desktop\\forms\\uc_telaresultados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{969DF1AF-8914-46EA-BFDF-EAB575E930C0}|Softcase.Desktop\\Softcase.Desktop.csproj|solutionrelative:softcase.desktop\\forms\\uc_telaresultados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{969DF1AF-8914-46EA-BFDF-EAB575E930C0}|Softcase.Desktop\\Softcase.Desktop.csproj|c:\\users\\jgzik\\desktop\\softsmart\\softsmart\\v2\\softsmart\\softcase.desktop\\forms\\uc_telaresultados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{969DF1AF-8914-46EA-BFDF-EAB575E930C0}|Softcase.Desktop\\Softcase.Desktop.csproj|solutionrelative:softcase.desktop\\forms\\uc_telaresultados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{969DF1AF-8914-46EA-BFDF-EAB575E930C0}|Softcase.Desktop\\Softcase.Desktop.csproj|c:\\users\\jgzik\\desktop\\softsmart\\softsmart\\v2\\softsmart\\softcase.desktop\\forms\\formprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{969DF1AF-8914-46EA-BFDF-EAB575E930C0}|Softcase.Desktop\\Softcase.Desktop.csproj|solutionrelative:softcase.desktop\\forms\\formprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15C0142A-33B0-49CE-B9D7-4DEF6D9A68AA}|Softcase.ML\\Softcase.ML.csproj|c:\\users\\jgzik\\desktop\\softsmart\\softsmart\\v2\\softsmart\\softcase.ml\\geradordedados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15C0142A-33B0-49CE-B9D7-4DEF6D9A68AA}|Softcase.ML\\Softcase.ML.csproj|solutionrelative:softcase.ml\\geradordedados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2FBB5283-9CDB-4602-9849-E9A272160F41}|Softcase.Core\\Softcase.Core.csproj|c:\\users\\jgzik\\desktop\\softsmart\\softsmart\\v2\\softsmart\\softcase.core\\classes\\servicodeprevisao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2FBB5283-9CDB-4602-9849-E9A272160F41}|Softcase.Core\\Softcase.Core.csproj|solutionrelative:softcase.core\\classes\\servicodeprevisao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2FBB5283-9CDB-4602-9849-E9A272160F41}|Softcase.Core\\Softcase.Core.csproj|c:\\users\\jgzik\\desktop\\softsmart\\softsmart\\v2\\softsmart\\softcase.core\\classes\\servicodecalendario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2FBB5283-9CDB-4602-9849-E9A272160F41}|Softcase.Core\\Softcase.Core.csproj|solutionrelative:softcase.core\\classes\\servicodecalendario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60F11D44-4A3A-4617-A254-0DF380142DA5}|Softcase.Web\\Softcase.Web.csproj|c:\\users\\jgzik\\desktop\\softsmart\\softsmart\\v2\\softsmart\\softcase.web\\softcase.web.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{60F11D44-4A3A-4617-A254-0DF380142DA5}|Softcase.Web\\Softcase.Web.csproj|solutionrelative:softcase.web\\softcase.web.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60F11D44-4A3A-4617-A254-0DF380142DA5}|Softcase.Web\\Softcase.Web.csproj|c:\\users\\jgzik\\desktop\\softsmart\\softsmart\\v2\\softsmart\\softcase.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60F11D44-4A3A-4617-A254-0DF380142DA5}|Softcase.Web\\Softcase.Web.csproj|solutionrelative:softcase.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{969DF1AF-8914-46EA-BFDF-EAB575E930C0}|Softcase.Desktop\\Softcase.Desktop.csproj|c:\\users\\jgzik\\desktop\\softsmart\\softsmart\\v2\\softsmart\\softcase.desktop\\forms\\formprincipal.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{969DF1AF-8914-46EA-BFDF-EAB575E930C0}|Softcase.Desktop\\Softcase.Desktop.csproj|solutionrelative:softcase.desktop\\forms\\formprincipal.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2FBB5283-9CDB-4602-9849-E9A272160F41}|Softcase.Core\\Softcase.Core.csproj|c:\\users\\jgzik\\desktop\\softsmart\\softsmart\\v2\\softsmart\\softcase.core\\dtos\\previsaofutura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2FBB5283-9CDB-4602-9849-E9A272160F41}|Softcase.Core\\Softcase.Core.csproj|solutionrelative:softcase.core\\dtos\\previsaofutura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2FBB5283-9CDB-4602-9849-E9A272160F41}|Softcase.Core\\Softcase.Core.csproj|c:\\users\\jgzik\\desktop\\softsmart\\softsmart\\v2\\softsmart\\softcase.core\\servicodecalendario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2FBB5283-9CDB-4602-9849-E9A272160F41}|Softcase.Core\\Softcase.Core.csproj|solutionrelative:softcase.core\\servicodecalendario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jgzik\\Desktop\\SoftSmart\\SoftSmart\\v2\\SoftSmart\\Softcase.Core\\ServicoDeCalendario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Softcase.Core\\ServicoDeCalendario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{15C0142A-33B0-49CE-B9D7-4DEF6D9A68AA}|Softcase.ML\\Softcase.ML.csproj|c:\\users\\jgzik\\desktop\\softsmart\\softsmart\\v2\\softsmart\\softcase.ml\\geradordedados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{15C0142A-33B0-49CE-B9D7-4DEF6D9A68AA}|Softcase.ML\\Softcase.ML.csproj|solutionrelative:softcase.ml\\geradordedados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jgzik\\Desktop\\SoftSmart\\SoftSmart\\v2\\SoftSmart\\Softcase.Core\\ServicoDeIA.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Softcase.Core\\ServicoDeIA.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,11 +74,177 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FormDashboard.cs [Projeto]",
+              "DocumentMoniker": "C:\\Users\\jgzik\\Desktop\\SoftSmart\\SoftSmart\\v2\\SoftSmart\\Softcase.Desktop\\Forms\\FormDashboard.cs",
+              "RelativeDocumentMoniker": "Softcase.Desktop\\Forms\\FormDashboard.cs",
+              "ToolTip": "C:\\Users\\jgzik\\Desktop\\SoftSmart\\SoftSmart\\v2\\SoftSmart\\Softcase.Desktop\\Forms\\FormDashboard.cs [Projeto]",
+              "RelativeToolTip": "Softcase.Desktop\\Forms\\FormDashboard.cs [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-08T01:58:54.841Z",
+              "EditorCaption": " [Projeto]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ServicoDeMotivo.cs",
+              "DocumentMoniker": "C:\\Users\\jgzik\\Desktop\\SoftSmart\\SoftSmart\\v2\\SoftSmart\\Softcase.Core\\Classes\\ServicoDeMotivo.cs",
+              "RelativeDocumentMoniker": "Softcase.Core\\Classes\\ServicoDeMotivo.cs",
+              "ToolTip": "C:\\Users\\jgzik\\Desktop\\SoftSmart\\SoftSmart\\v2\\SoftSmart\\Softcase.Core\\Classes\\ServicoDeMotivo.cs",
+              "RelativeToolTip": "Softcase.Core\\Classes\\ServicoDeMotivo.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAqwAoAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-08T01:43:39.476Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "UC_TelaResultados.cs",
+              "DocumentMoniker": "C:\\Users\\jgzik\\Desktop\\SoftSmart\\SoftSmart\\v2\\SoftSmart\\Softcase.Desktop\\Forms\\UC_TelaResultados.cs",
+              "RelativeDocumentMoniker": "Softcase.Desktop\\Forms\\UC_TelaResultados.cs",
+              "ToolTip": "C:\\Users\\jgzik\\Desktop\\SoftSmart\\SoftSmart\\v2\\SoftSmart\\Softcase.Desktop\\Forms\\UC_TelaResultados.cs",
+              "RelativeToolTip": "Softcase.Desktop\\Forms\\UC_TelaResultados.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-08T01:43:07.381Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UC_TelaResultados.cs [Projeto]",
+              "DocumentMoniker": "C:\\Users\\jgzik\\Desktop\\SoftSmart\\SoftSmart\\v2\\SoftSmart\\Softcase.Desktop\\Forms\\UC_TelaResultados.cs",
+              "RelativeDocumentMoniker": "Softcase.Desktop\\Forms\\UC_TelaResultados.cs",
+              "ToolTip": "C:\\Users\\jgzik\\Desktop\\SoftSmart\\SoftSmart\\v2\\SoftSmart\\Softcase.Desktop\\Forms\\UC_TelaResultados.cs [Projeto]",
+              "RelativeToolTip": "Softcase.Desktop\\Forms\\UC_TelaResultados.cs [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-08T01:43:03.924Z",
+              "EditorCaption": " [Projeto]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Simulador.razor",
+              "DocumentMoniker": "C:\\Users\\jgzik\\Desktop\\SoftSmart\\SoftSmart\\v2\\SoftSmart\\Softcase.Web\\Components\\Pages\\Simulador.razor",
+              "RelativeDocumentMoniker": "Softcase.Web\\Components\\Pages\\Simulador.razor",
+              "ToolTip": "C:\\Users\\jgzik\\Desktop\\SoftSmart\\SoftSmart\\v2\\SoftSmart\\Softcase.Web\\Components\\Pages\\Simulador.razor",
+              "RelativeToolTip": "Softcase.Web\\Components\\Pages\\Simulador.razor",
+              "ViewState": "AgIAACEBAAAAAAAAAAAuwJAAAABhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-07T00:30:55.476Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ServicoDePrevisao.cs",
+              "DocumentMoniker": "C:\\Users\\jgzik\\Desktop\\SoftSmart\\SoftSmart\\v2\\SoftSmart\\Softcase.Core\\Classes\\ServicoDePrevisao.cs",
+              "RelativeDocumentMoniker": "Softcase.Core\\Classes\\ServicoDePrevisao.cs",
+              "ToolTip": "C:\\Users\\jgzik\\Desktop\\SoftSmart\\SoftSmart\\v2\\SoftSmart\\Softcase.Core\\Classes\\ServicoDePrevisao.cs",
+              "RelativeToolTip": "Softcase.Core\\Classes\\ServicoDePrevisao.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAQwA4AAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-07T00:06:49.722Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FormPrincipal.cs",
+              "DocumentMoniker": "C:\\Users\\jgzik\\Desktop\\SoftSmart\\SoftSmart\\v2\\SoftSmart\\Softcase.Desktop\\Forms\\FormPrincipal.cs",
+              "RelativeDocumentMoniker": "Softcase.Desktop\\Forms\\FormPrincipal.cs",
+              "ToolTip": "C:\\Users\\jgzik\\Desktop\\SoftSmart\\SoftSmart\\v2\\SoftSmart\\Softcase.Desktop\\Forms\\FormPrincipal.cs",
+              "RelativeToolTip": "Softcase.Desktop\\Forms\\FormPrincipal.cs",
+              "ViewState": "AgIAAJsAAAAAAAAAAAAmwE4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T01:54:09.464Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FormPrincipal.cs [Projeto]",
+              "DocumentMoniker": "C:\\Users\\jgzik\\Desktop\\SoftSmart\\SoftSmart\\v2\\SoftSmart\\Softcase.Desktop\\Forms\\FormPrincipal.cs",
+              "RelativeDocumentMoniker": "Softcase.Desktop\\Forms\\FormPrincipal.cs",
+              "ToolTip": "C:\\Users\\jgzik\\Desktop\\SoftSmart\\SoftSmart\\v2\\SoftSmart\\Softcase.Desktop\\Forms\\FormPrincipal.cs [Projeto]",
+              "RelativeToolTip": "Softcase.Desktop\\Forms\\FormPrincipal.cs [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T02:58:10.716Z",
+              "EditorCaption": " [Projeto]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "GeradorDeDados.cs",
+              "DocumentMoniker": "C:\\Users\\jgzik\\Desktop\\SoftSmart\\SoftSmart\\v2\\SoftSmart\\Softcase.ML\\GeradorDeDados.cs",
+              "RelativeDocumentMoniker": "Softcase.ML\\GeradorDeDados.cs",
+              "ToolTip": "C:\\Users\\jgzik\\Desktop\\SoftSmart\\SoftSmart\\v2\\SoftSmart\\Softcase.ML\\GeradorDeDados.cs",
+              "RelativeToolTip": "Softcase.ML\\GeradorDeDados.cs",
+              "ViewState": "AgIAAL4AAAAAAAAAAAAIwOwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-29T23:59:02.61Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Softcase.Web.csproj",
+              "DocumentMoniker": "C:\\Users\\jgzik\\Desktop\\SoftSmart\\SoftSmart\\v2\\SoftSmart\\Softcase.Web\\Softcase.Web.csproj",
+              "RelativeDocumentMoniker": "Softcase.Web\\Softcase.Web.csproj",
+              "ToolTip": "C:\\Users\\jgzik\\Desktop\\SoftSmart\\SoftSmart\\v2\\SoftSmart\\Softcase.Web\\Softcase.Web.csproj",
+              "RelativeToolTip": "Softcase.Web\\Softcase.Web.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-01-07T00:14:27.776Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ServicoDeCalendario.cs",
+              "DocumentMoniker": "C:\\Users\\jgzik\\Desktop\\SoftSmart\\SoftSmart\\v2\\SoftSmart\\Softcase.Core\\Classes\\ServicoDeCalendario.cs",
+              "RelativeDocumentMoniker": "Softcase.Core\\Classes\\ServicoDeCalendario.cs",
+              "ToolTip": "C:\\Users\\jgzik\\Desktop\\SoftSmart\\SoftSmart\\v2\\SoftSmart\\Softcase.Core\\Classes\\ServicoDeCalendario.cs",
+              "RelativeToolTip": "Softcase.Core\\Classes\\ServicoDeCalendario.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAmwFUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-07T00:54:14.955Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\jgzik\\Desktop\\SoftSmart\\SoftSmart\\v2\\SoftSmart\\Softcase.Web\\Program.cs",
+              "RelativeDocumentMoniker": "Softcase.Web\\Program.cs",
+              "ToolTip": "C:\\Users\\jgzik\\Desktop\\SoftSmart\\SoftSmart\\v2\\SoftSmart\\Softcase.Web\\Program.cs",
+              "RelativeToolTip": "Softcase.Web\\Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-07T00:24:43.014Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "FormPrincipal.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\jgzik\\Desktop\\SoftSmart\\SoftSmart\\v2\\SoftSmart\\Softcase.Desktop\\Forms\\FormPrincipal.Designer.cs",
+              "RelativeDocumentMoniker": "Softcase.Desktop\\Forms\\FormPrincipal.Designer.cs",
+              "ToolTip": "C:\\Users\\jgzik\\Desktop\\SoftSmart\\SoftSmart\\v2\\SoftSmart\\Softcase.Desktop\\Forms\\FormPrincipal.Designer.cs",
+              "RelativeToolTip": "Softcase.Desktop\\Forms\\FormPrincipal.Designer.cs",
+              "ViewState": "AgIAAGcAAAAAAAAAAAAUwHsAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T02:57:31.156Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "PrevisaoFutura.cs",
               "DocumentMoniker": "C:\\Users\\jgzik\\Desktop\\SoftSmart\\SoftSmart\\v2\\SoftSmart\\Softcase.Core\\DTOs\\PrevisaoFutura.cs",
               "RelativeDocumentMoniker": "Softcase.Core\\DTOs\\PrevisaoFutura.cs",
@@ -54,19 +256,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "GeradorDeDados.cs",
-              "DocumentMoniker": "C:\\Users\\jgzik\\Desktop\\SoftSmart\\SoftSmart\\v2\\SoftSmart\\Softcase.ML\\GeradorDeDados.cs",
-              "RelativeDocumentMoniker": "Softcase.ML\\GeradorDeDados.cs",
-              "ToolTip": "C:\\Users\\jgzik\\Desktop\\SoftSmart\\SoftSmart\\v2\\SoftSmart\\Softcase.ML\\GeradorDeDados.cs",
-              "RelativeToolTip": "Softcase.ML\\GeradorDeDados.cs",
-              "ViewState": "AgIAANMAAAAAAAAAAAAIwOwAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-29T23:59:02.61Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 14,
               "Title": "ServicoDeCalendario.cs",
               "DocumentMoniker": "C:\\Users\\jgzik\\Desktop\\SoftSmart\\SoftSmart\\v2\\SoftSmart\\Softcase.Core\\ServicoDeCalendario.cs",
               "RelativeDocumentMoniker": "Softcase.Core\\ServicoDeCalendario.cs",
@@ -78,7 +268,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 15,
               "Title": "ServicoDeIA.cs",
               "DocumentMoniker": "C:\\Users\\jgzik\\Desktop\\SoftSmart\\SoftSmart\\v2\\SoftSmart\\Softcase.Core\\ServicoDeIA.cs",
               "RelativeDocumentMoniker": "Softcase.Core\\ServicoDeIA.cs",
@@ -87,42 +277,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAUAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-25T18:06:44.503Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ResultadoConsolidado.cs",
-              "DocumentMoniker": "C:\\Users\\jgzik\\Desktop\\SoftSmart\\SoftSmart\\v2\\SoftSmart\\Softcase.Core\\DTOs\\ResultadoConsolidado.cs",
-              "RelativeDocumentMoniker": "Softcase.Core\\DTOs\\ResultadoConsolidado.cs",
-              "ToolTip": "C:\\Users\\jgzik\\Desktop\\SoftSmart\\SoftSmart\\v2\\SoftSmart\\Softcase.Core\\DTOs\\ResultadoConsolidado.cs",
-              "RelativeToolTip": "Softcase.Core\\DTOs\\ResultadoConsolidado.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAswBQAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-25T15:40:12.221Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FormPrincipal.cs",
-              "DocumentMoniker": "C:\\Users\\jgzik\\Desktop\\SoftSmart\\SoftSmart\\v2\\SoftSmart\\Softcase.Desktop\\FormPrincipal.cs",
-              "RelativeDocumentMoniker": "Softcase.Desktop\\FormPrincipal.cs",
-              "ToolTip": "C:\\Users\\jgzik\\Desktop\\SoftSmart\\SoftSmart\\v2\\SoftSmart\\Softcase.Desktop\\FormPrincipal.cs",
-              "RelativeToolTip": "Softcase.Desktop\\FormPrincipal.cs",
-              "ViewState": "AgIAAF8AAAAAAAAAAAAkwH0AAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-14T20:27:46.951Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FormPrincipal.cs [Projeto]",
-              "DocumentMoniker": "C:\\Users\\jgzik\\Desktop\\SoftSmart\\SoftSmart\\v2\\SoftSmart\\Softcase.Desktop\\FormPrincipal.cs",
-              "RelativeDocumentMoniker": "Softcase.Desktop\\FormPrincipal.cs",
-              "ToolTip": "C:\\Users\\jgzik\\Desktop\\SoftSmart\\SoftSmart\\v2\\SoftSmart\\Softcase.Desktop\\FormPrincipal.cs [Projeto]",
-              "RelativeToolTip": "Softcase.Desktop\\FormPrincipal.cs [Projeto]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-14T20:27:31.682Z"
             }
           ]
         }

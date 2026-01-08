@@ -63,7 +63,7 @@
             Lbl_Informacoes.AutoSize = true;
             Lbl_Informacoes.Cursor = Cursors.Hand;
             Lbl_Informacoes.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            Lbl_Informacoes.Location = new Point(153, 169);
+            Lbl_Informacoes.Location = new Point(143, 169);
             Lbl_Informacoes.Name = "Lbl_Informacoes";
             Lbl_Informacoes.Size = new Size(25, 21);
             Lbl_Informacoes.TabIndex = 16;
@@ -95,6 +95,7 @@
             // 
             // Cbx_Prever
             // 
+            Cbx_Prever.Font = new Font("Segoe UI", 9F);
             Cbx_Prever.FormattingEnabled = true;
             Cbx_Prever.Location = new Point(56, 50);
             Cbx_Prever.Margin = new Padding(3, 2, 3, 2);
@@ -114,12 +115,14 @@
             // 
             // Cbx_Cidade
             // 
+            Cbx_Cidade.Font = new Font("Segoe UI", 9F);
             Cbx_Cidade.FormattingEnabled = true;
             Cbx_Cidade.Location = new Point(56, 113);
             Cbx_Cidade.Margin = new Padding(3, 2, 3, 2);
             Cbx_Cidade.Name = "Cbx_Cidade";
             Cbx_Cidade.Size = new Size(121, 23);
             Cbx_Cidade.TabIndex = 12;
+            Cbx_Cidade.KeyDown += Cbx_Cidade_KeyDown;
             // 
             // Btn_VerificaIA
             // 
@@ -148,6 +151,7 @@
             Name = "FormPrincipal";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "SoftSmart";
+            Load += FormPrincipal_Load;
             Grp_Infos.ResumeLayout(false);
             Grp_Infos.PerformLayout();
             ResumeLayout(false);

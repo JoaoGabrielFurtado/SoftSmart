@@ -47,7 +47,6 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(312, 352);
             Controls.Add(flp_Galeria);
-            FormBorderStyle = FormBorderStyle.FixedSingle;
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "FormDashboard";
             StartPosition = FormStartPosition.CenterScreen;

@@ -1,95 +1,309 @@
-﻿@page "/simulador"
-@using Softcase.Core
+﻿@page "/"
+@page "/simulador"
 @using Softcase.Core.Classes
-@using Softcase.ML
-@using Softcase_ML
-  
+@using Softcase.Core.DTOs
+@using Newtonsoft.Json
+@inject ServicoDePrevisao _servicoPrevisao
+@inject HttpClient _httpClient
 @rendermode InteractiveServer
 
-<h3>🔮 Simulador de Ocupação - SoftCase AI</h3>
-<p>Ajuste os cenários abaixo para ver a previsão da Inteligência Artificial.</p>
+<PageTitle>Simulador de Ocupação</PageTitle>
 
-<div class="row" style="max-width: 600px;">
-    <div class="col-md-6">
-        <div class="mb-3">
-            <label>Hora do Dia (@hora:00)</label>
-            <input type="range" class="form-range" min="0" max="23" @bind="hora" @bind:event="oninput" />
-        </div>
+<div class="container mt-4">
+    <h2 class="mb-4">🔮 Previsão de Ocupação (IA)</h2>
 
-        <div class="mb-3">
-            <label>Dia da Semana</label>
-            <select class="form-select" @bind="diaSemana">
-                <option value="1">Segunda-feira</option>
-                <option value="2">Terça-feira</option>
-                <option value="3">Quarta-feira</option>
-                <option value="4">Quinta-feira</option>
-                <option value="5">Sexta-feira</option>
-                <option value="6">Sábado</option>
-                <option value="0">Domingo</option>
-            </select>
-        </div>
+    <div class="card p-4 shadow-sm mb-4">
+        <div class="row g-3">
 
-        <div class="mb-3">
-            <label>Temperatura (@temperatura °C)</label>
-            <input type="range" class="form-range" min="0" max="40" @bind="temperatura" @bind:event="oninput" />
-        </div>
-
-        <div class="form-check">
-            <input class="form-check-input" type="checkbox" @bind="temChuva" id="checkChuva">
-            <label class="form-check-label" for="checkChuva">Está Chovendo?</label>
-        </div>
-
-        <div class="form-check">
-            <input class="form-check-input" type="checkbox" @bind="temEvento" id="checkEvento">
-            <label class="form-check-label" for="checkEvento">Grande Evento na Região?</label>
-        </div>
-
-        <br />
-        <button class="btn btn-primary w-100" @onclick="PreverOcupacao">Calcular Previsão</button>
-    </div>
-
-    <div class="col-md-6">
-        <div class="card text-center">
-            <div class="card-header">
-                Ocupação Prevista
+            <div class="col-md-9">
+                <label class="form-label fw-bold">Cidade:</label>
+                <input type="text"
+                       class="form-control"
+                       list="listaCidadesData"
+                       placeholder="Digite para buscar..."
+                       @bind="cidadeSelecionada" />
+                <datalist id="listaCidadesData">
+                    @foreach (var cidade in listaCidades)
+                    {
+                        <option value="@cidade"></option>
+                    }
+                </datalist>
             </div>
-            <div class="card-body">
-                <h1 class="display-4">@resultadoPrevisao.ToString("F0")</h1>
-                <p>Vagas Ocupadas</p>
 
-                <div class="progress">
-                    <div class="progress-bar @corBarra" role="progressbar"
-                         style="width: @(resultadoPrevisao)%;"
-                         aria-valuenow="@resultadoPrevisao" aria-valuemin="0" aria-valuemax="250">
+            <div class="col-md-3">
+                <label class="form-label fw-bold">Dias para prever:</label>
+                <select class="form-select" value="@diasPrever" @onchange="AoMudarDiasPrever">
+                    <option value="1">1 dia</option>
+                    <option value="2">2 dias</option>
+                    <option value="3">3 dias</option>
+                    <option value="4">4 dias</option>
+                    <option value="5">5 dias</option>
+                </select>
+            </div>
+
+            <div class="col-12 mt-3">
+                <div class="card bg-light border-0">
+                    <div class="card-body">
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="checkbox" id="chkMostrarEventos" @bind="mostrarOpcoesEvento">
+                            <label class="form-check-label fw-bold text-danger cursor-pointer" for="chkMostrarEventos">
+                                ⚠ Tem Evento na região? (Clique para detalhar)
+                            </label>
+                        </div>
+
+                        @if (mostrarOpcoesEvento)
+                        {
+                            <div class="mt-3 ps-3 border-start border-3 border-danger animate-fade-in">
+                                <small class="text-muted d-block mb-2">Marque abaixo quais dias terão eventos:</small>
+                                <div class="d-flex flex-wrap gap-3">
+                                    @foreach (var dia in listaDiasParaEvento)
+                                    {
+                                        <div class="form-check bg-white px-3 py-2 rounded shadow-sm border">
+                                            <input class="form-check-input" type="checkbox"
+                                                   id="chk_@dia.Data.Day"
+                                                   @bind="dia.TemEvento">
+                                            <label class="form-check-label" for="chk_@dia.Data.Day">
+                                                <strong>@dia.Data.ToString("dd/MM")</strong> <span class="text-muted small">(@dia.DiaSemana)</span>
+                                            </label>
+                                        </div>
+                                    }
+                                </div>
+                            </div>
+                        }
                     </div>
                 </div>
             </div>
+
+            <div class="col-12 mt-4">
+                <button class="btn btn-primary w-100 py-2 fw-bold" @onclick="VerificarPrevisao" disabled="@carregando">
+                    @if (carregando)
+                    {
+                        <span>⏳ Consultando Clima e Processando IA...</span>
+                    }
+                    else
+                    {
+                        <span>🚀 Verificar Ocupação</span>
+                    }
+                </button>
+            </div>
         </div>
     </div>
+
+    @if (!string.IsNullOrEmpty(mensagemErro))
+    {
+        <div class="alert alert-danger shadow-sm">@mensagemErro</div>
+    }
+
+    @if (listaResultados.Any())
+    {
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            @foreach (var item in listaResultados)
+            {
+                <div class="col">
+                    <div class="card h-100 border-0 shadow-sm" style="@(item.Evento == "Sim" ? "background-color: #fff5f5; border: 1px solid #ffcccc !important;" : "")">
+                        <div class="card-header bg-white border-0 d-flex justify-content-between align-items-center">
+                            <h5 class="mb-0 fw-bold">@item.DiaSemana</h5>
+                            <small class="text-muted">@item.Data</small>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between mb-3">
+                                <span class="fs-4 fw-bold text-warning">
+                                    @item.TemperaturaMedia.ToString("F0")°C @(item.TemChuva == "Sim" ? "🌧" : "☀")
+                                </span>
+                                @if (item.Evento == "Sim")
+                                {
+                                    <span class="badge bg-danger align-self-center">EVENTO!</span>
+                                }
+                            </div>
+
+                            <hr />
+
+                            <div class="mb-2">
+                                <div class="d-flex justify-content-between small"><span>Manhã (09h)</span> <strong>@item.OcupacaoManha</strong></div>
+                                <div class="progress" style="height: 10px;">
+                                    <div class="progress-bar bg-info" style="width: @item.OcupacaoManhaInt%"></div>
+                                </div>
+                            </div>
+
+                            <div class="mb-2">
+                                <div class="d-flex justify-content-between small"><span>Tarde (15h)</span> <strong>@item.OcupacaoTarde</strong></div>
+                                <div class="progress" style="height: 10px;">
+                                    <div class="progress-bar bg-warning" style="width: @item.OcupacaoTardeInt%"></div>
+                                </div>
+                            </div>
+
+                            <div class="mb-2">
+                                <div class="d-flex justify-content-between small"><span>Noite (21h)</span> <strong>@item.OcupacaoNoite</strong></div>
+                                <div class="progress" style="height: 10px;">
+                                    <div class="progress-bar @(item.OcupacaoNoiteInt > 80 ? "bg-danger" : "bg-success")" style="width: @item.OcupacaoNoiteInt%"></div>
+                                </div>
+                            </div>
+
+                            <hr class="my-2" />
+
+                            @{
+                                string motivo = Softcase.Core.Classes.ServicoDeMotivo.GerarMotivo(
+                                item.OcupacaoManhaInt,
+                                item.OcupacaoTardeInt,
+                                item.OcupacaoNoiteInt,
+                                item.Evento,
+                                item.TemChuva,
+                                item.TemperaturaMedia
+                                );
+                            }
+
+                            <div class="alert alert-secondary py-2 px-3 mb-0 small fst-italic border-0"
+                                 style="background-color: #f8f9fa; color: #555;">
+                                <i class="bi bi-lightbulb-fill text-warning me-1"></i> @motivo
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    }
 </div>
 
 @code {
-    private int hora = 12;
-    private int diaSemana = 1; 
-    private float temperatura = 25;
-    private bool temChuva = false;
-    private bool temEvento = false;
-
-    private float resultadoPrevisao = 0;
-    private string corBarra = "bg-success";
-
-    private void PreverOcupacao()
+    // CLASSES AUXILIARES
+    public class OpcaoDiaEvento
     {
-        var chuva = temChuva ? 1 : 0;
-        var evento = temEvento ? 1 : 0;
+        public DateTime Data { get; set; }
+        public string DiaSemana { get; set; } = "";
+        public bool TemEvento { get; set; }
+    }
 
-        int previsao = ServicoDeIA.RetornaResultadoIA(hora, diaSemana, temperatura, chuva, evento, 0);
+    // VARIÁVEIS
+    private string cidadeSelecionada = "";
+    private int diasPrever = 1;
+    private bool mostrarOpcoesEvento = false;
+    private bool carregando = false;
+    private string mensagemErro = "";
 
-        resultadoPrevisao = previsao;
+    private List<string> listaCidades = new();
+    private List<ResultadoConsolidado> listaResultados = new();
 
-        // Logica barra
-        if (resultadoPrevisao > 200) corBarra = "bg-danger"; 
-        else if (resultadoPrevisao > 100) corBarra = "bg-warning"; 
-        else corBarra = "bg-success"; 
+    // Lista que controla os checkboxes
+    private List<OpcaoDiaEvento> listaDiasParaEvento = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        await PopulaCidades();
+        AtualizarListaDeDatas(); // Inicializa a lista de datas
+    }
+
+    // Evento disparado quando muda o número de dias no combo
+    private void AoMudarDiasPrever(ChangeEventArgs e)
+    {
+        if (int.TryParse(e.Value?.ToString(), out int dias))
+        {
+            diasPrever = dias;
+            AtualizarListaDeDatas();
+        }
+    }
+
+    // Gera a lista de datas
+    private void AtualizarListaDeDatas()
+    {
+        listaDiasParaEvento.Clear();
+        for (int i = 1; i <= diasPrever; i++)
+        {
+            DateTime data = DateTime.Now.Date.AddDays(i);
+            listaDiasParaEvento.Add(new OpcaoDiaEvento
+            {
+                Data = data,
+                DiaSemana = data.ToString("ddd"),
+                TemEvento = false
+            });
+        }
+    }
+
+    private async Task PopulaCidades()
+    {
+        try
+        {
+            var response = await _httpClient.GetStringAsync("https://servicodados.ibge.gov.br/api/v1/localidades/municipios?orderBy=nome");
+            var cidadesDin = JsonConvert.DeserializeObject<List<dynamic>>(response);
+
+            if (cidadesDin != null)
+            {
+                foreach (var c in cidadesDin)
+                {
+                    listaCidades.Add(c.nome.ToString());
+                }
+            }
+        }
+        catch (Exception ex)
+        {
+            mensagemErro = "Erro ao carregar cidades IBGE: " + ex.Message;
+        }
+    }
+
+    private async Task VerificarPrevisao()
+    {
+        if (string.IsNullOrEmpty(cidadeSelecionada))
+        {
+            mensagemErro = "Selecione uma cidade!";
+            return;
+        }
+
+        carregando = true;
+        mensagemErro = "";
+        listaResultados.Clear();
+
+        try
+        {
+            var previsaoBruta = await _servicoPrevisao.RetornaPrevisaoFuturaAsync(cidadeSelecionada, diasPrever);
+            float capacidadeTotalIA = 250f;
+
+            foreach (var item in previsaoBruta)
+            {
+                bool temEventoHoje = false;
+
+                if (mostrarOpcoesEvento)
+                {
+                    var diaConfigurado = listaDiasParaEvento.FirstOrDefault(d => d.Data.Date == item.Data.Date);
+                    if (diaConfigurado != null && diaConfigurado.TemEvento)
+                    {
+                        temEventoHoje = true;
+                    }
+                }
+
+
+                int ocupManha = ServicoDeIA.RetornaResultadoIA(9f, (float)item.Data.DayOfWeek, item.TempManha, item.Chuva, temEventoHoje ? 1 : 0, item.EhFeriado);
+                int pctManhaReal = (int)Math.Clamp((ocupManha / capacidadeTotalIA) * 100, 0, 100);
+
+                int ocupTarde = ServicoDeIA.RetornaResultadoIA(15f, (float)item.Data.DayOfWeek, item.TempTarde, item.Chuva, temEventoHoje ? 1 : 0, item.EhFeriado);
+                int pctTardeReal = (int)Math.Clamp((ocupTarde / capacidadeTotalIA) * 100, 0, 100);
+
+                int ocupNoite = ServicoDeIA.RetornaResultadoIA(21f, (float)item.Data.DayOfWeek, item.TempNoite, item.Chuva, temEventoHoje ? 1 : 0, item.EhFeriado);
+                int pctNoiteReal = (int)Math.Clamp((ocupNoite / capacidadeTotalIA) * 100, 0, 100);
+
+                listaResultados.Add(new ResultadoConsolidado
+                {
+                    DiaSemana = item.Data.ToString("dddd"),
+                    Data = item.Data.ToString("dd/MM"),
+                    TemperaturaMedia = item.Temperatura,
+                    TemChuva = item.Chuva == 1 ? "Sim" : "Não",
+
+                    Evento = temEventoHoje ? "Sim" : "Não",
+
+                    OcupacaoManha = $"{pctManhaReal}%",
+                    OcupacaoManhaInt = pctManhaReal,
+                    OcupacaoTarde = $"{pctTardeReal}%",
+                    OcupacaoTardeInt = pctTardeReal,
+                    OcupacaoNoite = $"{pctNoiteReal}%",
+                    OcupacaoNoiteInt = pctNoiteReal
+                });
+            }
+        }
+        catch (Exception ex)
+        {
+            mensagemErro = "Erro na IA: " + ex.Message;
+        }
+        finally
+        {
+            carregando = false;
+        }
     }
 }

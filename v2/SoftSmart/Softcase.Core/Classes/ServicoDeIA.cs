@@ -1,23 +1,34 @@
-﻿using Softcase_ML;
-namespace Softcase.Core.Classes;
+﻿using Microsoft.ML;
+using Softcase_ML; 
 
-public static class ServicoDeIA
+namespace Softcase.Core.Classes
 {
-    public static int RetornaResultadoIA(float horario, float diaSemana, float temperatura, float estaChovendo, float temEvento, float ehFeriado)
+    public static class ServicoDeIA
     {
-        var dadosEntrada = new ModeloOcupacao.ModelInput
+        public static int RetornaResultadoIA(float horario, float diaSemana, float temperatura, float estaChovendo, float temEvento, float ehFeriado)
         {
-            Hora = horario,
-            DiaDaSemana = diaSemana,
-            Temperatura = temperatura,
-            Chuva = estaChovendo,
-            EventoNaRegiao = temEvento,
-            EhFeriado = ehFeriado
-        };
+            var mlContext = new MLContext();
 
-        var predict = ModeloOcupacao.Predict(dadosEntrada);
-        float valor = predict.Score;
+            string pastaDoExecutavel = AppDomain.CurrentDomain.BaseDirectory;
+            string caminhoCompleto = Path.Combine(pastaDoExecutavel, "ModeloOcupacao.mlnet");
 
-        return (int)valor;
+            ITransformer mlModel = mlContext.Model.Load(caminhoCompleto, out var modelInputSchema);
+
+            var predEngine = mlContext.Model.CreatePredictionEngine<ModeloOcupacao.ModelInput, ModeloOcupacao.ModelOutput>(mlModel);
+
+            var dadosEntrada = new ModeloOcupacao.ModelInput
+            {
+                Hora = horario,
+                DiaDaSemana = diaSemana,
+                Temperatura = temperatura,
+                Chuva = estaChovendo,
+                EventoNaRegiao = temEvento,
+                EhFeriado = ehFeriado
+            };
+
+            var resultado = predEngine.Predict(dadosEntrada);
+
+            return (int)resultado.Score;
+        }
     }
 }
