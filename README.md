@@ -91,7 +91,7 @@ A solução foi modularizada para garantir reaproveitamento de código entre Des
 ### Passos
 1.  Clone o repositório.
 2.  Abra a solução `SoftSmart.sln` no Visual Studio.
-3.  Defina o projeto **Softcase.Web** como projeto de inicialização.
+3.  Defina o projeto **Softcase.Web** ou **Softcase.Desktop** como projeto de inicialização.
 4.  **Importante:** Certifique-se de que o arquivo `ModeloOcupacao.mlnet` está configurado para "Copiar se for mais novo" nas propriedades, garantindo que a IA carregue a versão mais recente.
 5.  Execute o projeto (F5).
 
