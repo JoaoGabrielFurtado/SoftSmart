@@ -27,6 +27,11 @@
 * **Análise de Eventos:** Detecta e calcula o impacto crítico de eventos na região (ex: shows, jogos) na lotação noturna.
 * **Fatores Climáticos:** Considera temperatura e chuva na previsão de fluxo.
 
+### 💻 Versão Desktop (v1 - Windows Forms)
+* Prova de Conceito (PoC) da arquitetura.
+* Processamento local rápido.
+* Validação dos dados de treinamento.
+
 ### 🌐 Versão Web (v2 - Blazor Server)
 * **Dashboard Interativo:** Visualização clara com barras de progresso e alertas visuais.
 * **Integração com APIs:**
@@ -35,10 +40,13 @@
 * **Gerador de Insights:** Texto gerado automaticamente explicando o *porquê* da previsão (ex: "Lotação crítica devido a evento + chuva").
 * **UX Aprimorada:** Inputs inteligentes com busca de cidades e seleção de múltiplos dias de eventos.
 
-### 💻 Versão Desktop (v1 - Windows Forms)
-* Prova de Conceito (PoC) da arquitetura.
-* Processamento local rápido.
-* Validação dos dados de treinamento.
+### 💻 Versão Desktop (v2 - Windows Forms)
+* **Dashboard Interativo:** Visualização clara com barras de progresso e alertas visuais.
+* **Integração com APIs:**
+    * **IBGE:** Busca automática de municípios brasileiros.
+    * **OpenWeatherMap:** Consulta de previsão do tempo em tempo real para os próximos 5 dias.
+* **Gerador de Insights:** Texto gerado automaticamente explicando o *porquê* da previsão (ex: "Lotação crítica devido a evento + chuva").
+* **UX Aprimorada:** Inputs inteligentes com busca de cidades e seleção de múltiplos dias de eventos.
 
 ---
 
