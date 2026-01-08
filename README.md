@@ -33,7 +33,6 @@
     * **IBGE:** Busca automática de municípios brasileiros.
     * **OpenWeatherMap:** Consulta de previsão do tempo em tempo real para os próximos 5 dias.
 * **Gerador de Insights:** Texto gerado automaticamente explicando o *porquê* da previsão (ex: "Lotação crítica devido a evento + chuva").
-* **Estimativa de Receita:** Cálculo automático de faturamento projetado baseada na ocupação prevista.
 * **UX Aprimorada:** Inputs inteligentes com busca de cidades e seleção de múltiplos dias de eventos.
 
 ### 💻 Versão Desktop (v1 - Windows Forms)
