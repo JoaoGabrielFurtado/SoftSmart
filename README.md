@@ -97,4 +97,4 @@ A solução foi modularizada para garantir reaproveitamento de código entre Des
 
 ---
 
-Desenvolvido por **[João Gabriel Furtado]** como solução de inovação para gestão de estacionamentos.
+Desenvolvido por **João Gabriel Furtado** como solução de inovação para gestão de estacionamentos.
