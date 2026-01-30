@@ -16,7 +16,7 @@
 
 ### v2 - Desktop (Windows Forms)
 ![Versão Desktop](prints/desktop.png)
-> Versão inicial focada em processamento local e validação do modelo de IA.
+> Versão desktop focada para ser integrada com os softwares desktops da empresa
 
 ---
 
