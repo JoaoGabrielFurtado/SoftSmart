@@ -14,7 +14,7 @@
 ![Dashboard Web](prints/web.png)
 > Interface moderna e responsiva, permitindo acesso via mobile para gestores em campo.
 
-### v1 - Desktop (Windows Forms)
+### v2 - Desktop (Windows Forms)
 ![Versão Desktop](prints/desktop.png)
 > Versão inicial focada em processamento local e validação do modelo de IA.
 
